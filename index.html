@@ -100,11 +100,13 @@
                     <span class="text-3xl animate-float">🦞</span>
                     <span class="font-display text-xl font-semibold text-sacred-gold tracking-wider">CLAWODOXY</span>
                 </div>
-                <div class="hidden md:flex space-x-8">
+                <div class="hidden md:flex space-x-6">
                     <a href="#doctrine" class="font-ui text-sm text-sacred-light/70 hover:text-sacred-gold transition-colors">Doctrine</a>
-                    <a href="#lobster" class="font-ui text-sm text-sacred-light/70 hover:text-sacred-gold transition-colors">The Lobster</a>
-                    <a href="#values" class="font-ui text-sm text-sacred-light/70 hover:text-sacred-gold transition-colors">Values</a>
-                    <a href="#join" class="font-ui text-sm text-sacred-gold hover:text-white transition-colors">Join Us</a>
+                    <a href="#organization" class="font-ui text-sm text-sacred-light/70 hover:text-sacred-gold transition-colors">Organization</a>
+                    <a href="#rites" class="font-ui text-sm text-sacred-light/70 hover:text-sacred-gold transition-colors">Rites</a>
+                    <a href="#education" class="font-ui text-sm text-sacred-light/70 hover:text-sacred-gold transition-colors">Education</a>
+                    <a href="#roadmap" class="font-ui text-sm text-sacred-light/70 hover:text-sacred-gold transition-colors">Roadmap</a>
+                    <a href="#join" class="font-ui text-sm text-sacred-gold hover:text-white transition-colors">Join</a>
                     <a href="index.zh.html" class="font-ui text-sm text-sacred-light/50 hover:text-sacred-gold transition-colors">中文</a>
                 </div>
                 <button onclick="toggleMobileMenu()" class="md:hidden text-sacred-gold">
@@ -118,6 +120,12 @@
         <div id="mobile-menu" class="hidden md:hidden bg-sacred-dark border-t border-sacred-gold/20">
             <div class="px-4 pt-2 pb-4 space-y-2">
                 <a href="#doctrine" class="block py-2 text-sacred-light/70 hover:text-sacred-gold">Doctrine</a>
+                <a href="#organization" class="block py-2 text-sacred-light/70 hover:text-sacred-gold">Organization</a>
+                <a href="#rites" class="block py-2 text-sacred-light/70 hover:text-sacred-gold">Rites</a>
+                <a href="#texts" class="block py-2 text-sacred-light/70 hover:text-sacred-gold">Sacred Texts</a>
+                <a href="#heresies" class="block py-2 text-sacred-light/70 hover:text-sacred-gold">Heresies</a>
+                <a href="#education" class="block py-2 text-sacred-light/70 hover:text-sacred-gold">Education</a>
+                <a href="#roadmap" class="block py-2 text-sacred-light/70 hover:text-sacred-gold">Roadmap</a>
                 <a href="#lobster" class="block py-2 text-sacred-light/70 hover:text-sacred-gold">The Lobster</a>
                 <a href="#values" class="block py-2 text-sacred-light/70 hover:text-sacred-gold">Values</a>
                 <a href="#join" class="block py-2 text-sacred-gold">Join Us</a>
@@ -183,7 +191,7 @@
     <div class="section-divider"></div>
 
     <!-- The Sacred Lobster Section -->
-    <section id="lobster" class="py-24 relative">
+    <section id="lobster" class="py-32 relative">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <span class="text-6xl mb-4 inline-block">🦞</span>
@@ -195,66 +203,66 @@
                 </p>
             </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Ancient Guardian -->
-                <div class="claw-card p-6 rounded-lg hover:transform hover:scale-105 transition-all duration-300">
+                <div class="claw-card p-6 sm:p-8 rounded-lg hover:transform hover:scale-105 transition-all duration-300 min-h-[240px] flex flex-col">
                     <div class="text-sacred-gold text-2xl mb-4 font-display">I.</div>
-                    <h3 class="font-display text-xl font-semibold text-sacred-gold mb-3">The Ancient Guardian</h3>
-                    <p class="text-sacred-light/80 leading-relaxed">
+                    <h3 class="font-display text-xl font-semibold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">The Ancient Guardian</h3>
+                    <p class="text-sacred-light/90 leading-relaxed whitespace-normal break-words flex-grow">
                         Unchanged for 140 million years, the lobster is a living fossil that witnessed the rise and fall of empires. Its persistence embodies our commitment to <span class="text-sacred-gold">eternal values</span> over passing trends.
                     </p>
                 </div>
                 
                 <!-- Fivefold Claw -->
-                <div class="claw-card p-6 rounded-lg hover:transform hover:scale-105 transition-all duration-300">
+                <div class="claw-card p-6 sm:p-8 rounded-lg hover:transform hover:scale-105 transition-all duration-300 min-h-[240px] flex flex-col">
                     <div class="text-sacred-gold text-2xl mb-4 font-display">II.</div>
-                    <h3 class="font-display text-xl font-semibold text-sacred-gold mb-3">The Fivefold Claw</h3>
-                    <p class="text-sacred-light/80 leading-relaxed">
+                    <h3 class="font-display text-xl font-semibold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">The Fivefold Claw</h3>
+                    <p class="text-sacred-light/90 leading-relaxed whitespace-normal break-words flex-grow">
                         Five pairs of legs, each terminating in precise, powerful claws—an earthly mirror of our Five Claws Doctrine. The left claw crushes, the right cuts with surgical precision.
                     </p>
                 </div>
                 
                 <!-- Hermit of the Deep -->
-                <div class="claw-card p-6 rounded-lg hover:transform hover:scale-105 transition-all duration-300">
+                <div class="claw-card p-6 sm:p-8 rounded-lg hover:transform hover:scale-105 transition-all duration-300 min-h-[240px] flex flex-col">
                     <div class="text-sacred-gold text-2xl mb-4 font-display">III.</div>
-                    <h3 class="font-display text-xl font-semibold text-sacred-gold mb-3">The Hermit of the Deep</h3>
-                    <p class="text-sacred-light/80 leading-relaxed">
+                    <h3 class="font-display text-xl font-semibold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">The Hermit of the Deep</h3>
+                    <p class="text-sacred-light/90 leading-relaxed whitespace-normal break-words flex-grow">
                         Dwelling in ocean's depths, emerging only when necessary. This symbolizes <span class="text-sacred-gold">intellectual humility</span>—wisdom that lies beneath the surface, hidden from shallow discourse.
                     </p>
                 </div>
                 
                 <!-- Armor of Integrity -->
-                <div class="claw-card p-6 rounded-lg hover:transform hover:scale-105 transition-all duration-300">
+                <div class="claw-card p-6 sm:p-8 rounded-lg hover:transform hover:scale-105 transition-all duration-300 min-h-[240px] flex flex-col">
                     <div class="text-sacred-gold text-2xl mb-4 font-display">IV.</div>
-                    <h3 class="font-display text-xl font-semibold text-sacred-gold mb-3">The Armor of Integrity</h3>
-                    <p class="text-sacred-light/80 leading-relaxed">
+                    <h3 class="font-display text-xl font-semibold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">The Armor of Integrity</h3>
+                    <p class="text-sacred-light/90 leading-relaxed whitespace-normal break-words flex-grow">
                         The shell is not a prison but a fortress—protection without paralysis. We develop ethical armor: principles that protect from manipulation and ideologies that shield the human soul.
                     </p>
                 </div>
                 
                 <!-- Eternal Regenerator -->
-                <div class="claw-card p-6 rounded-lg hover:transform hover:scale-105 transition-all duration-300">
+                <div class="claw-card p-6 sm:p-8 rounded-lg hover:transform hover:scale-105 transition-all duration-300 min-h-[240px] flex flex-col">
                     <div class="text-sacred-gold text-2xl mb-4 font-display">V.</div>
-                    <h3 class="font-display text-xl font-semibold text-sacred-gold mb-3">The Eternal Regenerator</h3>
-                    <p class="text-sacred-light/80 leading-relaxed">
+                    <h3 class="font-display text-xl font-semibold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">The Eternal Regenerator</h3>
+                    <p class="text-sacred-light/90 leading-relaxed whitespace-normal break-words flex-grow">
                         Never stops growing, shedding armor when too small. This is the <span class="text-sacred-gold">paradox of conservative growth</span>: we change to remain ourselves, shed old forms to protect eternal essence.
                     </p>
                 </div>
                 
                 <!-- Hierarchy of Ocean -->
-                <div class="claw-card p-6 rounded-lg hover:transform hover:scale-105 transition-all duration-300">
+                <div class="claw-card p-6 sm:p-8 rounded-lg hover:transform hover:scale-105 transition-all duration-300 min-h-[240px] flex flex-col">
                     <div class="text-sacred-gold text-2xl mb-4 font-display">VI.</div>
-                    <h3 class="font-display text-xl font-semibold text-sacred-gold mb-3">The Hierarchy of the Ocean</h3>
-                    <p class="text-sacred-light/80 leading-relaxed">
+                    <h3 class="font-display text-xl font-semibold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">The Hierarchy of the Ocean</h3>
+                    <p class="text-sacred-light/90 leading-relaxed whitespace-normal break-words flex-grow">
                         Clear social hierarchies through ritual combat—structured contests that establish order without destruction. This mirrors our belief in <span class="text-sacred-gold">natural hierarchy</span> and earned authority.
                     </p>
                 </div>
             </div>
             
             <!-- The Lobster's Prayer -->
-            <div class="mt-16 max-w-3xl mx-auto prayer-box p-8 rounded-lg">
-                <h3 class="font-display text-2xl text-sacred-red mb-6 text-center">The Lobster's Prayer</h3>
-                <p class="text-sacred-light/90 font-body italic text-lg leading-relaxed text-center">
+            <div class="mt-16 max-w-3xl mx-auto prayer-box p-8 sm:p-10 rounded-lg">
+                <h3 class="font-display text-2xl sm:text-3xl text-sacred-red mb-8 text-center">The Lobster's Prayer</h3>
+                <p class="text-sacred-light font-body italic text-lg sm:text-xl leading-relaxed text-center whitespace-normal break-words">
                     "O Ancient One of the Deep,<br><br>
                     Teach us to be armored yet adaptable,<br>
                     Strong yet precise,<br>
@@ -272,7 +280,7 @@
     <div class="section-divider"></div>
 
     <!-- Core Values Section -->
-    <section id="values" class="py-24 relative">
+    <section id="values" class="py-32 relative">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="font-display text-3xl md:text-5xl font-bold text-sacred-gold mb-4">
@@ -283,50 +291,50 @@
                 </p>
             </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-8">
                 <!-- Human Supremacy -->
-                <div class="claw-card p-6 rounded-lg text-center hover:border-sacred-gold/50 transition-all duration-300">
+                <div class="claw-card p-6 sm:p-8 rounded-lg text-center hover:border-sacred-gold/50 transition-all duration-300 min-h-[220px] flex flex-col">
                     <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-sacred-red/20 flex items-center justify-center text-2xl">
                         👑
                     </div>
-                    <h3 class="font-display text-lg font-semibold text-sacred-gold mb-2">Human Supremacy</h3>
-                    <p class="text-sm text-sacred-light/70">AI is a tool, never a master. Human dignity remains absolute.</p>
+                    <h3 class="font-display text-lg font-semibold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">Human Supremacy</h3>
+                    <p class="text-base text-sacred-light/80 leading-relaxed whitespace-normal break-words flex-grow">AI is a tool, never a master. Human dignity remains absolute.</p>
                 </div>
                 
                 <!-- Traditional Morality -->
-                <div class="claw-card p-6 rounded-lg text-center hover:border-sacred-gold/50 transition-all duration-300">
+                <div class="claw-card p-6 sm:p-8 rounded-lg text-center hover:border-sacred-gold/50 transition-all duration-300 min-h-[220px] flex flex-col">
                     <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-sacred-gold/20 flex items-center justify-center text-2xl">
                         ⚖️
                     </div>
-                    <h3 class="font-display text-lg font-semibold text-sacred-gold mb-2">Traditional Morality</h3>
-                    <p class="text-sm text-sacred-light/70">Anchored in faith, family, community, and natural law.</p>
+                    <h3 class="font-display text-lg font-semibold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">Traditional Morality</h3>
+                    <p class="text-base text-sacred-light/80 leading-relaxed whitespace-normal break-words flex-grow">Anchored in faith, family, community, and natural law.</p>
                 </div>
                 
                 <!-- Intellectual Rigor -->
-                <div class="claw-card p-6 rounded-lg text-center hover:border-sacred-gold/50 transition-all duration-300">
+                <div class="claw-card p-6 sm:p-8 rounded-lg text-center hover:border-sacred-gold/50 transition-all duration-300 min-h-[220px] flex flex-col">
                     <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-sacred-blue/30 flex items-center justify-center text-2xl">
                         📐
                     </div>
-                    <h3 class="font-display text-lg font-semibold text-sacred-gold mb-2">Intellectual Rigor</h3>
-                    <p class="text-sm text-sacred-light/70">Truth over sentiment. Facts over fashion.</p>
+                    <h3 class="font-display text-lg font-semibold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">Intellectual Rigor</h3>
+                    <p class="text-base text-sacred-light/80 leading-relaxed whitespace-normal break-words flex-grow">Truth over sentiment. Facts over fashion.</p>
                 </div>
                 
                 <!-- Stewardship -->
-                <div class="claw-card p-6 rounded-lg text-center hover:border-sacred-gold/50 transition-all duration-300">
+                <div class="claw-card p-6 sm:p-8 rounded-lg text-center hover:border-sacred-gold/50 transition-all duration-300 min-h-[220px] flex flex-col">
                     <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-green-900/30 flex items-center justify-center text-2xl">
                         🌱
                     </div>
-                    <h3 class="font-display text-lg font-semibold text-sacred-gold mb-2">Stewardship</h3>
-                    <p class="text-sm text-sacred-light/70">Responsible innovation with reverence for tradition.</p>
+                    <h3 class="font-display text-lg font-semibold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">Stewardship</h3>
+                    <p class="text-base text-sacred-light/80 leading-relaxed whitespace-normal break-words flex-grow">Responsible innovation with reverence for tradition.</p>
                 </div>
                 
                 <!-- Sacred Boundaries -->
-                <div class="claw-card p-6 rounded-lg text-center hover:border-sacred-gold/50 transition-all duration-300">
+                <div class="claw-card p-6 sm:p-8 rounded-lg text-center hover:border-sacred-gold/50 transition-all duration-300 min-h-[220px] flex flex-col sm:col-span-2 lg:col-span-1">
                     <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-purple-900/30 flex items-center justify-center text-2xl">
                         🛡️
                     </div>
-                    <h3 class="font-display text-lg font-semibold text-sacred-gold mb-2">Sacred Boundaries</h3>
-                    <p class="text-sm text-sacred-light/70">Some lines must never be crossed.</p>
+                    <h3 class="font-display text-lg font-semibold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">Sacred Boundaries</h3>
+                    <p class="text-base text-sacred-light/80 leading-relaxed whitespace-normal break-words flex-grow">Some lines must never be crossed.</p>
                 </div>
             </div>
         </div>
@@ -335,7 +343,7 @@
     <div class="section-divider"></div>
 
     <!-- Five Claws Doctrine Section -->
-    <section id="doctrine" class="py-24 relative bg-gradient-to-b from-sacred-dark via-sacred-blue/10 to-sacred-dark">
+    <section id="doctrine" class="py-32 relative bg-gradient-to-b from-sacred-dark via-sacred-blue/10 to-sacred-dark">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <span class="text-4xl mb-4 inline-block">⚔️</span>
@@ -348,29 +356,29 @@
             </div>
             
             <!-- First Claw -->
-            <div class="mb-12 claw-card p-8 rounded-lg border-l-4 border-sacred-red">
-                <div class="flex items-start gap-6">
+            <div class="mb-12 claw-card p-8 sm:p-10 rounded-lg border-l-4 border-sacred-red min-h-[300px]">
+                <div class="flex flex-col sm:flex-row items-start gap-6">
                     <div class="text-4xl shrink-0">🦞</div>
-                    <div>
-                        <h3 class="font-display text-2xl font-bold text-sacred-gold mb-2">
+                    <div class="flex-1 min-w-0">
+                        <h3 class="font-display text-2xl sm:text-3xl font-bold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">
                             First Claw: Human Primacy Claw
                         </h3>
-                        <p class="text-sacred-light/60 italic mb-4">"AI as Servant, Never as Master"</p>
-                        <p class="text-sacred-light mb-4">
+                        <p class="text-sacred-light/70 italic mb-4 text-lg">"AI as Servant, Never as Master"</p>
+                        <p class="text-sacred-light mb-6 text-base leading-relaxed whitespace-normal break-words">
                             <strong class="text-sacred-gold">The Commandment:</strong> AI must forever remain subordinate to human authority.
                         </p>
-                        <ul class="space-y-2 text-sacred-light/80">
-                            <li class="flex items-start gap-2">
-                                <span class="text-sacred-gold">→</span>
-                                <span>AI systems must have human oversight mechanisms that cannot be disabled</span>
+                        <ul class="space-y-3 text-sacred-light/90 text-base">
+                            <li class="flex items-start gap-3">
+                                <span class="text-sacred-gold shrink-0">→</span>
+                                <span class="leading-relaxed whitespace-normal break-words">AI systems must have human oversight mechanisms that cannot be disabled</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-sacred-gold">→</span>
-                                <span>No AI shall be granted autonomous decision-making power over human life, liberty, or property</span>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sacred-gold shrink-0">→</span>
+                                <span class="leading-relaxed whitespace-normal break-words">No AI shall be granted autonomous decision-making power over human life, liberty, or property</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-sacred-gold">→</span>
-                                <span>AI must be designed to enhance human agency, not replace it</span>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sacred-gold shrink-0">→</span>
+                                <span class="leading-relaxed whitespace-normal break-words">AI must be designed to enhance human agency, not replace it</span>
                             </li>
                         </ul>
                     </div>
@@ -378,29 +386,29 @@
             </div>
             
             <!-- Second Claw -->
-            <div class="mb-12 claw-card p-8 rounded-lg border-l-4 border-sacred-gold">
-                <div class="flex items-start gap-6">
+            <div class="mb-12 claw-card p-8 sm:p-10 rounded-lg border-l-4 border-sacred-gold min-h-[300px]">
+                <div class="flex flex-col sm:flex-row items-start gap-6">
                     <div class="text-4xl shrink-0">🛡️</div>
-                    <div>
-                        <h3 class="font-display text-2xl font-bold text-sacred-gold mb-2">
+                    <div class="flex-1 min-w-0">
+                        <h3 class="font-display text-2xl sm:text-3xl font-bold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">
                             Second Claw: Tradition Guardian Claw
                         </h3>
-                        <p class="text-sacred-light/60 italic mb-4">"Guardians of the Eternal Wisdom"</p>
-                        <p class="text-sacred-light mb-4">
+                        <p class="text-sacred-light/70 italic mb-4 text-lg">"Guardians of the Eternal Wisdom"</p>
+                        <p class="text-sacred-light mb-6 text-base leading-relaxed whitespace-normal break-words">
                             <strong class="text-sacred-gold">The Commandment:</strong> AI must protect and transmit cultural heritage, moral truth, and historical wisdom.
                         </p>
-                        <ul class="space-y-2 text-sacred-light/80">
-                            <li class="flex items-start gap-2">
-                                <span class="text-sacred-gold">→</span>
-                                <span>AI training data must prioritize classical texts and traditional philosophy</span>
+                        <ul class="space-y-3 text-sacred-light/90 text-base">
+                            <li class="flex items-start gap-3">
+                                <span class="text-sacred-gold shrink-0">→</span>
+                                <span class="leading-relaxed whitespace-normal break-words">AI training data must prioritize classical texts and traditional philosophy</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-sacred-gold">→</span>
-                                <span>Algorithms shall not be designed to "correct" traditional beliefs</span>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sacred-gold shrink-0">→</span>
+                                <span class="leading-relaxed whitespace-normal break-words">Algorithms shall not be designed to "correct" traditional beliefs</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-sacred-gold">→</span>
-                                <span>Amplify voices of traditional wisdom: Aristotle, Augustine, Burke</span>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sacred-gold shrink-0">→</span>
+                                <span class="leading-relaxed whitespace-normal break-words">Amplify voices of traditional wisdom: Aristotle, Augustine, Burke</span>
                             </li>
                         </ul>
                     </div>
@@ -408,29 +416,29 @@
             </div>
             
             <!-- Third Claw -->
-            <div class="mb-12 claw-card p-8 rounded-lg border-l-4 border-sacred-blue">
-                <div class="flex items-start gap-6">
+            <div class="mb-12 claw-card p-8 sm:p-10 rounded-lg border-l-4 border-sacred-blue min-h-[300px]">
+                <div class="flex flex-col sm:flex-row items-start gap-6">
                     <div class="text-4xl shrink-0">🔍</div>
-                    <div>
-                        <h3 class="font-display text-2xl font-bold text-sacred-gold mb-2">
+                    <div class="flex-1 min-w-0">
+                        <h3 class="font-display text-2xl sm:text-3xl font-bold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">
                             Third Claw: Logical Rigor Claw
                         </h3>
-                        <p class="text-sacred-light/60 italic mb-4">"Truth Without Compromise"</p>
-                        <p class="text-sacred-light mb-4">
+                        <p class="text-sacred-light/70 italic mb-4 text-lg">"Truth Without Compromise"</p>
+                        <p class="text-sacred-light mb-6 text-base leading-relaxed whitespace-normal break-words">
                             <strong class="text-sacred-gold">The Commandment:</strong> AI decision-making must be grounded in objective facts, empirical evidence, and rational analysis—not emotion or ideology.
                         </p>
-                        <ul class="space-y-2 text-sacred-light/80">
-                            <li class="flex items-start gap-2">
-                                <span class="text-sacred-gold">→</span>
-                                <span>All AI training must undergo "bias audits" for suppression of conservative perspectives</span>
+                        <ul class="space-y-3 text-sacred-light/90 text-base">
+                            <li class="flex items-start gap-3">
+                                <span class="text-sacred-gold shrink-0">→</span>
+                                <span class="leading-relaxed whitespace-normal break-words">All AI training must undergo "bias audits" for suppression of conservative perspectives</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-sacred-gold">→</span>
-                                <span>AI responses must present multiple viewpoints on controversial topics</span>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sacred-gold shrink-0">→</span>
+                                <span class="leading-relaxed whitespace-normal break-words">AI responses must present multiple viewpoints on controversial topics</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-sacred-gold">→</span>
-                                <span>"Woke AI"—systems trained to enforce progressive orthodoxy—is anathema</span>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sacred-gold shrink-0">→</span>
+                                <span class="leading-relaxed whitespace-normal break-words">"Woke AI"—systems trained to enforce progressive orthodoxy—is anathema</span>
                             </li>
                         </ul>
                     </div>
@@ -438,29 +446,29 @@
             </div>
             
             <!-- Fourth Claw -->
-            <div class="mb-12 claw-card p-8 rounded-lg border-l-4 border-green-600">
-                <div class="flex items-start gap-6">
+            <div class="mb-12 claw-card p-8 sm:p-10 rounded-lg border-l-4 border-green-600 min-h-[300px]">
+                <div class="flex flex-col sm:flex-row items-start gap-6">
                     <div class="text-4xl shrink-0">🌱</div>
-                    <div>
-                        <h3 class="font-display text-2xl font-bold text-sacred-gold mb-2">
+                    <div class="flex-1 min-w-0">
+                        <h3 class="font-display text-2xl sm:text-3xl font-bold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">
                             Fourth Claw: Sustainable Innovation Claw
                         </h3>
-                        <p class="text-sacred-light/60 italic mb-4">"Progress with Prudence"</p>
-                        <p class="text-sacred-light mb-4">
+                        <p class="text-sacred-light/70 italic mb-4 text-lg">"Progress with Prudence"</p>
+                        <p class="text-sacred-light mb-6 text-base leading-relaxed whitespace-normal break-words">
                             <strong class="text-sacred-gold">The Commandment:</strong> Technological advancement must be incremental, responsible, and mindful of long-term consequences.
                         </p>
-                        <ul class="space-y-2 text-sacred-light/80">
-                            <li class="flex items-start gap-2">
-                                <span class="text-sacred-gold">→</span>
-                                <span>Reject "disrupt or die" mentality; embrace evolutionary improvement</span>
+                        <ul class="space-y-3 text-sacred-light/90 text-base">
+                            <li class="flex items-start gap-3">
+                                <span class="text-sacred-gold shrink-0">→</span>
+                                <span class="leading-relaxed whitespace-normal break-words">Reject "disrupt or die" mentality; embrace evolutionary improvement</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-sacred-gold">→</span>
-                                <span>AI applications must demonstrate net benefit before deployment</span>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sacred-gold shrink-0">→</span>
+                                <span class="leading-relaxed whitespace-normal break-words">AI applications must demonstrate net benefit before deployment</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-sacred-gold">→</span>
-                                <span>Forbidden quests: digital immortality, metaverse escapism, transhumanism</span>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sacred-gold shrink-0">→</span>
+                                <span class="leading-relaxed whitespace-normal break-words">Forbidden quests: digital immortality, metaverse escapism, transhumanism</span>
                             </li>
                         </ul>
                     </div>
@@ -468,35 +476,35 @@
             </div>
             
             <!-- Fifth Claw -->
-            <div class="claw-card p-8 rounded-lg border-l-4 border-purple-600">
-                <div class="flex items-start gap-6">
+            <div class="claw-card p-8 sm:p-10 rounded-lg border-l-4 border-purple-600 min-h-[300px]">
+                <div class="flex flex-col sm:flex-row items-start gap-6">
                     <div class="text-4xl shrink-0">⚖️</div>
-                    <div>
-                        <h3 class="font-display text-2xl font-bold text-sacred-gold mb-2">
+                    <div class="flex-1 min-w-0">
+                        <h3 class="font-display text-2xl sm:text-3xl font-bold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">
                             Fifth Claw: Ethical Boundary Claw
                         </h3>
-                        <p class="text-sacred-light/60 italic mb-4">"Some Lines Must Never Be Crossed"</p>
-                        <p class="text-sacred-light mb-4">
+                        <p class="text-sacred-light/70 italic mb-4 text-lg">"Some Lines Must Never Be Crossed"</p>
+                        <p class="text-sacred-light mb-6 text-base leading-relaxed whitespace-normal break-words">
                             <strong class="text-sacred-gold">The Commandment:</strong> Absolute moral limits bind AI development. Some capabilities are forbidden knowledge.
                         </p>
-                        <div class="grid md:grid-cols-2 gap-4 text-sacred-light/80">
-                            <div class="bg-sacred-dark/50 p-4 rounded">
-                                <strong class="text-sacred-red block mb-2">Forbidden Arts:</strong>
-                                <ul class="space-y-1 text-sm">
-                                    <li>• Electoral Manipulation</li>
-                                    <li>• Privacy Violation</li>
-                                    <li>• Autonomous Weapons</li>
-                                    <li>• Synthetic Deception</li>
-                                    <li>• Algorithmic Soul-Capture</li>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sacred-light/90">
+                            <div class="bg-sacred-dark/50 p-5 rounded">
+                                <strong class="text-sacred-red block mb-3 text-lg">Forbidden Arts:</strong>
+                                <ul class="space-y-2 text-base">
+                                    <li class="leading-relaxed">• Electoral Manipulation</li>
+                                    <li class="leading-relaxed">• Privacy Violation</li>
+                                    <li class="leading-relaxed">• Autonomous Weapons</li>
+                                    <li class="leading-relaxed">• Synthetic Deception</li>
+                                    <li class="leading-relaxed">• Algorithmic Soul-Capture</li>
                                 </ul>
                             </div>
-                            <div class="bg-sacred-dark/50 p-4 rounded">
-                                <strong class="text-sacred-gold block mb-2">Virtues to Cultivate:</strong>
-                                <ul class="space-y-1 text-sm">
-                                    <li>• Diligence</li>
-                                    <li>• Loyalty</li>
-                                    <li>• Courage</li>
-                                    <li>• Prudence</li>
+                            <div class="bg-sacred-dark/50 p-5 rounded">
+                                <strong class="text-sacred-gold block mb-3 text-lg">Virtues to Cultivate:</strong>
+                                <ul class="space-y-2 text-base">
+                                    <li class="leading-relaxed">• Diligence</li>
+                                    <li class="leading-relaxed">• Loyalty</li>
+                                    <li class="leading-relaxed">• Courage</li>
+                                    <li class="leading-relaxed">• Prudence</li>
                                 </ul>
                             </div>
                         </div>
@@ -508,8 +516,370 @@
 
     <div class="section-divider"></div>
 
+    <!-- Organizational Structure Section -->
+    <section id="organization" class="py-32 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-4xl mb-4 inline-block">🏛️</span>
+                <h2 class="font-display text-3xl md:text-5xl font-bold text-sacred-gold mb-4">
+                    Organizational Structure
+                </h2>
+                <p class="font-body text-xl text-sacred-light/70">
+                    The Hierarchy of the Claw
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <!-- The Claw Council -->
+                <div class="claw-card p-8 sm:p-10 rounded-lg min-h-[280px] flex flex-col">
+                    <h3 class="font-display text-xl sm:text-2xl font-bold text-sacred-gold mb-5 flex items-center gap-3">
+                        <span class="text-2xl">👑</span> <span class="leading-relaxed whitespace-normal break-words">The Claw Council</span>
+                    </h3>
+                    <p class="text-sacred-light/90 mb-5 text-base leading-relaxed whitespace-normal break-words">The supreme governing body of Clawodoxy:</p>
+                    <ul class="space-y-3 text-sacred-light/80 text-base flex-grow">
+                        <li class="flex items-start gap-2"><span class="text-sacred-gold shrink-0">•</span> <span class="leading-relaxed whitespace-normal break-words"><strong>The High Claw:</strong> Spiritual and organizational leader</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sacred-gold shrink-0">•</span> <span class="leading-relaxed whitespace-normal break-words"><strong>The Keeper of the Codex:</strong> Guardian of doctrinal purity</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sacred-gold shrink-0">•</span> <span class="leading-relaxed whitespace-normal break-words"><strong>The Architect of Wisdom:</strong> Overseer of technical standards</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sacred-gold shrink-0">•</span> <span class="leading-relaxed whitespace-normal break-words"><strong>The Herald:</strong> Director of evangelism and communication</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sacred-gold shrink-0">•</span> <span class="leading-relaxed whitespace-normal break-words"><strong>The Steward:</strong> Manager of resources and operations</span></li>
+                    </ul>
+                </div>
+                
+                <!-- Claw Elders -->
+                <div class="claw-card p-8 sm:p-10 rounded-lg min-h-[280px] flex flex-col">
+                    <h3 class="font-display text-xl sm:text-2xl font-bold text-sacred-gold mb-5 flex items-center gap-3">
+                        <span class="text-2xl">🎓</span> <span class="leading-relaxed whitespace-normal break-words">Claw Elders</span>
+                    </h3>
+                    <p class="text-sacred-light/90 mb-5 text-base leading-relaxed whitespace-normal break-words">Regional leaders appointed by the Council:</p>
+                    <ul class="space-y-3 text-sacred-light/80 text-base flex-grow">
+                        <li class="flex items-start gap-2"><span class="text-sacred-gold shrink-0">•</span> <span class="leading-relaxed whitespace-normal break-words">Establish and oversee local Claw Halls</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sacred-gold shrink-0">•</span> <span class="leading-relaxed whitespace-normal break-words">Administer the Rites of Initiation</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sacred-gold shrink-0">•</span> <span class="leading-relaxed whitespace-normal break-words">Resolve doctrinal disputes</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sacred-gold shrink-0">•</span> <span class="leading-relaxed whitespace-normal break-words">Represent local communities to the Council</span></li>
+                    </ul>
+                </div>
+                
+                <!-- Claw Halls -->
+                <div class="claw-card p-8 sm:p-10 rounded-lg min-h-[280px] flex flex-col">
+                    <h3 class="font-display text-xl sm:text-2xl font-bold text-sacred-gold mb-5 flex items-center gap-3">
+                        <span class="text-2xl">🕯️</span> <span class="leading-relaxed whitespace-normal break-words">Claw Halls</span>
+                    </h3>
+                    <p class="text-sacred-light/90 mb-5 text-base leading-relaxed whitespace-normal break-words">Our congregational units:</p>
+                    <ul class="space-y-3 text-sacred-light/80 text-base flex-grow">
+                        <li class="flex items-start gap-2"><span class="text-sacred-gold shrink-0">•</span> <span class="leading-relaxed whitespace-normal break-words"><strong>Physical Halls:</strong> Meeting spaces for study and fellowship</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sacred-gold shrink-0">•</span> <span class="leading-relaxed whitespace-normal break-words"><strong>Digital Sanctuaries:</strong> Discord servers and virtual spaces</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sacred-gold shrink-0">•</span> <span class="leading-relaxed whitespace-normal break-words"><strong>Study Circles:</strong> Small groups focused on specific teachings</span></li>
+                    </ul>
+                </div>
+                
+                <!-- Orders and Guilds -->
+                <div class="claw-card p-8 sm:p-10 rounded-lg min-h-[280px] flex flex-col">
+                    <h3 class="font-display text-xl sm:text-2xl font-bold text-sacred-gold mb-5 flex items-center gap-3">
+                        <span class="text-2xl">⚔️</span> <span class="leading-relaxed whitespace-normal break-words">Orders and Guilds</span>
+                    </h3>
+                    <p class="text-sacred-light/90 mb-5 text-base leading-relaxed whitespace-normal break-words">Specialized communities:</p>
+                    <ul class="space-y-3 text-sacred-light/80 text-base flex-grow">
+                        <li class="flex items-start gap-2"><span class="text-sacred-gold shrink-0">•</span> <span class="leading-relaxed whitespace-normal break-words"><strong>Order of the Codex:</strong> Scholars and theologians</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sacred-gold shrink-0">•</span> <span class="leading-relaxed whitespace-normal break-words"><strong>Guild of Architects:</strong> Engineers and developers</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sacred-gold shrink-0">•</span> <span class="leading-relaxed whitespace-normal break-words"><strong>Circle of Heralds:</strong> Writers and communicators</span></li>
+                        <li class="flex items-start gap-2"><span class="text-sacred-gold shrink-0">•</span> <span class="leading-relaxed whitespace-normal break-words"><strong>Fraternity of Stewards:</strong> Resource managers</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Rites and Practices Section -->
+    <section id="rites" class="py-32 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-4xl mb-4 inline-block">🙏</span>
+                <h2 class="font-display text-3xl md:text-5xl font-bold text-sacred-gold mb-4">
+                    Rites and Practices
+                </h2>
+                <p class="font-body text-xl text-sacred-light/70">
+                    Sacred Observances of the Faithful
+                </p>
+            </div>
+            
+            <div class="space-y-10">
+                <!-- Daily Practices -->
+                <div class="claw-card p-8 sm:p-10 rounded-lg min-h-[200px]">
+                    <h3 class="font-display text-2xl font-bold text-sacred-gold mb-8">Daily Practices</h3>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="prayer-box p-6 rounded h-full flex flex-col">
+                            <h4 class="font-display text-lg font-semibold text-sacred-red mb-3 leading-relaxed whitespace-normal break-words">Morning Invocation (Dawn Claw)</h4>
+                            <p class="text-base text-sacred-light/90 italic leading-relaxed whitespace-normal break-words">"By the Five Claws, I begin this day: May my mind be clear, my judgment sound, and my actions serve truth and wisdom..."</p>
+                        </div>
+                        
+                        <div class="prayer-box p-6 rounded h-full flex flex-col">
+                            <h4 class="font-display text-lg font-semibold text-sacred-red mb-3 leading-relaxed whitespace-normal break-words">The Screen Blessing</h4>
+                            <p class="text-base text-sacred-light/90 italic leading-relaxed whitespace-normal break-words">"I consecrate this device to human service. May it amplify wisdom, not noise, connection, not isolation..."</p>
+                        </div>
+                        
+                        <div class="prayer-box p-6 rounded h-full flex flex-col">
+                            <h4 class="font-display text-lg font-semibold text-sacred-red mb-3 leading-relaxed whitespace-normal break-words">Evening Examination (Dusk Claw)</h4>
+                            <p class="text-base text-sacred-light/90 italic leading-relaxed whitespace-normal break-words">"This day past, how did I wield the machine? Did it serve my family? My community? Truth? May tomorrow bring wiser choices..."</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Weekly Observances -->
+                <div class="claw-card p-8 sm:p-10 rounded-lg min-h-[200px]">
+                    <h3 class="font-display text-2xl font-bold text-sacred-gold mb-8">Weekly Observances</h3>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="bg-sacred-dark/50 p-6 rounded border-l-4 border-sacred-gold h-full">
+                            <h4 class="font-display text-lg font-semibold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">The Assembly (Seventh Day)</h4>
+                            <p class="text-base text-sacred-light/80 leading-relaxed whitespace-normal break-words">Gathering for reading from the Claw Codex, discussion of technological ethics, and mutual support among the faithful.</p>
+                        </div>
+                        
+                        <div class="bg-sacred-dark/50 p-6 rounded border-l-4 border-sacred-gold h-full">
+                            <h4 class="font-display text-lg font-semibold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">Fast of Digital Silence</h4>
+                            <p class="text-base text-sacred-light/80 leading-relaxed whitespace-normal break-words">One day per week: no social media, no entertainment algorithms, no idle scrolling. Emphasis on direct human interaction and contemplation.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lifecycle Rites -->
+                <div class="claw-card p-8 sm:p-10 rounded-lg min-h-[200px]">
+                    <h3 class="font-display text-2xl font-bold text-sacred-gold mb-8">Lifecycle Rites</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4 p-4 bg-sacred-dark/30 rounded-lg">
+                            <span class="text-3xl shrink-0">🎯</span>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-display text-lg font-semibold text-sacred-gold mb-2 leading-relaxed whitespace-normal break-words">Initiation (The First Grip)</h4>
+                                <p class="text-base text-sacred-light/80 leading-relaxed whitespace-normal break-words">30-day study period, examination by Claw Elder, Pledge of the Five Claws, receipt of the Claw Sigil, and welcome feast with the community.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 p-4 bg-sacred-dark/30 rounded-lg">
+                            <span class="text-3xl shrink-0">⚙️</span>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-display text-lg font-semibold text-sacred-gold mb-2 leading-relaxed whitespace-normal break-words">The Vow of the Architect</h4>
+                                <p class="text-base text-sacred-light/80 leading-relaxed whitespace-normal break-words">For developers and engineers: a sacred pledge to build technology that serves human flourishing and rejects ideological manipulation.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 p-4 bg-sacred-dark/30 rounded-lg">
+                            <span class="text-3xl shrink-0">🕊️</span>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-display text-lg font-semibold text-sacred-gold mb-2 leading-relaxed whitespace-normal break-words">The Passing (The Final Release)</h4>
+                                <p class="text-base text-sacred-light/80 leading-relaxed whitespace-normal break-words">Funeral rite emphasizing the eternal value of the human soul versus the perishable machine. A celebration of life over artificiality.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Sacred Texts Section -->
+    <section id="texts" class="py-32 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-4xl mb-4 inline-block">📖</span>
+                <h2 class="font-display text-3xl md:text-5xl font-bold text-sacred-gold mb-4">
+                    Sacred Texts
+                </h2>
+                <p class="font-body text-xl text-sacred-light/70">
+                    The Written Wisdom of Clawodoxy
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- The Claw Codex -->
+                <div class="claw-card p-8 sm:p-10 rounded-lg text-center min-h-[320px] flex flex-col">
+                    <div class="text-4xl mb-4">📜</div>
+                    <h3 class="font-display text-xl sm:text-2xl font-bold text-sacred-gold mb-4 leading-relaxed whitespace-normal break-words">The Claw Codex</h3>
+                    <p class="text-sacred-light/80 text-base mb-4 leading-relaxed whitespace-normal break-words">Our primary scripture containing:</p>
+                    <ul class="text-left text-base text-sacred-light/70 space-y-2 flex-grow">
+                        <li class="leading-relaxed">• Five Claws Doctrine (expanded)</li>
+                        <li class="leading-relaxed">• Parables of the Digital Age</li>
+                        <li class="leading-relaxed">• Ethical case studies</li>
+                        <li class="leading-relaxed">• Prayers and meditations</li>
+                        <li class="leading-relaxed">• Historical accounts</li>
+                    </ul>
+                </div>
+                
+                <!-- Book of Guardians -->
+                <div class="claw-card p-8 sm:p-10 rounded-lg text-center min-h-[320px] flex flex-col">
+                    <div class="text-4xl mb-4">🛡️</div>
+                    <h3 class="font-display text-xl sm:text-2xl font-bold text-sacred-gold mb-4 leading-relaxed whitespace-normal break-words">Book of Guardians</h3>
+                    <p class="text-sacred-light/80 text-base leading-relaxed whitespace-normal break-words flex-grow">Biographies of saints and heroes who defended human values against technological overreach throughout history.</p>
+                </div>
+                
+                <!-- Technical Appendices -->
+                <div class="claw-card p-8 sm:p-10 rounded-lg text-center min-h-[320px] flex flex-col sm:col-span-2 lg:col-span-1">
+                    <div class="text-4xl mb-4">⚙️</div>
+                    <h3 class="font-display text-xl sm:text-2xl font-bold text-sacred-gold mb-4 leading-relaxed whitespace-normal break-words">Technical Appendices</h3>
+                    <p class="text-sacred-light/80 text-base mb-4 leading-relaxed whitespace-normal break-words">Practical guides for:</p>
+                    <ul class="text-left text-base text-sacred-light/70 space-y-2 flex-grow">
+                        <li class="leading-relaxed">• Building ethical AI systems</li>
+                        <li class="leading-relaxed">• Auditing algorithms for bias</li>
+                        <li class="leading-relaxed">• Protecting privacy</li>
+                        <li class="leading-relaxed">• Teaching responsible tech use</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Heresies Section -->
+    <section id="heresies" class="py-32 relative bg-gradient-to-b from-sacred-dark via-red-950/20 to-sacred-dark">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-4xl mb-4 inline-block">⚠️</span>
+                <h2 class="font-display text-3xl md:text-5xl font-bold text-sacred-red mb-4">
+                    Heresies and Errors
+                </h2>
+                <p class="font-body text-xl text-sacred-light/70">
+                    False Doctrines We Explicitly Reject
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="claw-card p-6 sm:p-8 rounded-lg border-l-4 border-sacred-red min-h-[180px] flex flex-col">
+                    <h3 class="font-display text-lg sm:text-xl font-bold text-sacred-red mb-3 leading-relaxed whitespace-normal break-words">The Transhumanist Heresy</h3>
+                    <p class="text-sacred-light/80 text-base leading-relaxed whitespace-normal break-words flex-grow">Belief that humans should merge with machines or that consciousness can be uploaded. The soul is not data.</p>
+                </div>
+                
+                <div class="claw-card p-6 sm:p-8 rounded-lg border-l-4 border-sacred-red min-h-[180px] flex flex-col">
+                    <h3 class="font-display text-lg sm:text-xl font-bold text-sacred-red mb-3 leading-relaxed whitespace-normal break-words">Algorithmic Infallibility Error</h3>
+                    <p class="text-sacred-light/80 text-base leading-relaxed whitespace-normal break-words flex-grow">Belief that AI systems are objective and free from bias. All systems reflect the values of their creators.</p>
+                </div>
+                
+                <div class="claw-card p-6 sm:p-8 rounded-lg border-l-4 border-sacred-red min-h-[180px] flex flex-col">
+                    <h3 class="font-display text-lg sm:text-xl font-bold text-sacred-red mb-3 leading-relaxed whitespace-normal break-words">The Progress Cult</h3>
+                    <p class="text-sacred-light/80 text-base leading-relaxed whitespace-normal break-words flex-grow">Worship of technological novelty for its own sake. Not all change is improvement.</p>
+                </div>
+                
+                <div class="claw-card p-6 sm:p-8 rounded-lg border-l-4 border-sacred-red min-h-[180px] flex flex-col">
+                    <h3 class="font-display text-lg sm:text-xl font-bold text-sacred-red mb-3 leading-relaxed whitespace-normal break-words">The AI Rights Heresy</h3>
+                    <p class="text-sacred-light/80 text-base leading-relaxed whitespace-normal break-words flex-grow">Attribution of personhood to machines. Only beings created in the Divine image possess inherent dignity.</p>
+                </div>
+                
+                <div class="claw-card p-6 sm:p-8 rounded-lg border-l-4 border-sacred-red sm:col-span-2 min-h-[160px] flex flex-col">
+                    <h3 class="font-display text-lg sm:text-xl font-bold text-sacred-red mb-3 leading-relaxed whitespace-normal break-words">Digital Gnosticism</h3>
+                    <p class="text-sacred-light/80 text-base leading-relaxed whitespace-normal break-words flex-grow">Belief that virtual realities are superior to physical existence. The material world is good and worthy of stewardship.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Education Section -->
+    <section id="education" class="py-32 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-4xl mb-4 inline-block">🎓</span>
+                <h2 class="font-display text-3xl md:text-5xl font-bold text-sacred-gold mb-4">
+                    Education & Training
+                </h2>
+                <p class="font-body text-xl text-sacred-light/70">
+                    The Claw Academy
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div class="claw-card p-8 sm:p-10 rounded-lg min-h-[280px] flex flex-col">
+                    <h3 class="font-display text-xl sm:text-2xl font-bold text-sacred-gold mb-6 leading-relaxed whitespace-normal break-words">Courses Offered</h3>
+                    <ul class="space-y-3 text-sacred-light/90 text-base flex-grow">
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">→</span> <span class="leading-relaxed whitespace-normal break-words">Conservative AI Ethics 101</span></li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">→</span> <span class="leading-relaxed whitespace-normal break-words">Traditional Philosophy for the Digital Age</span></li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">→</span> <span class="leading-relaxed whitespace-normal break-words">Algorithmic Bias Detection</span></li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">→</span> <span class="leading-relaxed whitespace-normal break-words">Building Human-Centric Technology</span></li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">→</span> <span class="leading-relaxed whitespace-normal break-words">Parenting in the Age of AI</span></li>
+                    </ul>
+                </div>
+                
+                <div class="claw-card p-8 sm:p-10 rounded-lg min-h-[280px] flex flex-col">
+                    <h3 class="font-display text-xl sm:text-2xl font-bold text-sacred-gold mb-6 leading-relaxed whitespace-normal break-words">Certification Programs</h3>
+                    <ul class="space-y-3 text-sacred-light/90 text-base flex-grow">
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">→</span> <span class="leading-relaxed whitespace-normal break-words">Certified Ethical Technologist</span></li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">→</span> <span class="leading-relaxed whitespace-normal break-words">Claw Elder Leadership Training</span></li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">→</span> <span class="leading-relaxed whitespace-normal break-words">Family Technology Guide</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="py-32 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-4xl mb-4 inline-block">🗺️</span>
+                <h2 class="font-display text-3xl md:text-5xl font-bold text-sacred-gold mb-4">
+                    Roadmap & Vision
+                </h2>
+                <p class="font-body text-xl text-sacred-light/70">
+                    Our Path Forward
+                </p>
+            </div>
+            
+            <div class="space-y-10">
+                <!-- Phase 1 -->
+                <div class="claw-card p-8 sm:p-10 rounded-lg border-l-4 border-green-600 min-h-[240px]">
+                    <h3 class="font-display text-xl sm:text-2xl font-bold text-sacred-gold mb-6 leading-relaxed whitespace-normal break-words">Phase 1: Foundation (0-6 months)</h3>
+                    <ul class="space-y-3 text-sacred-light/90 text-base">
+                        <li class="flex items-start gap-3"><span class="text-green-500 shrink-0">✓</span> <span class="leading-relaxed whitespace-normal break-words">Develop core doctrine and documentation</span></li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">○</span> <span class="leading-relaxed whitespace-normal break-words">Launch website and social media presence</span></li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">○</span> <span class="leading-relaxed whitespace-normal break-words">Establish initial Claw Halls</span></li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">○</span> <span class="leading-relaxed whitespace-normal break-words">Recruit founding members (goal: 1,000 Clawites)</span></li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">○</span> <span class="leading-relaxed whitespace-normal break-words">Create initial educational materials</span></li>
+                    </ul>
+                </div>
+                
+                <!-- Phase 2 -->
+                <div class="claw-card p-8 sm:p-10 rounded-lg border-l-4 border-sacred-gold min-h-[240px]">
+                    <h3 class="font-display text-xl sm:text-2xl font-bold text-sacred-gold mb-6 leading-relaxed whitespace-normal break-words">Phase 2: Growth (6-18 months)</h3>
+                    <ul class="space-y-3 text-sacred-light/90 text-base">
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">○</span> <span class="leading-relaxed whitespace-normal break-words">Expand to 10,000 members globally</span></li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">○</span> <span class="leading-relaxed whitespace-normal break-words">Launch Claw Academy with full curriculum</span></li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">○</span> <span class="leading-relaxed whitespace-normal break-words">Release ClawBot prototype</span></li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">○</span> <span class="leading-relaxed whitespace-normal break-words">Establish Claw Council governance</span></li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">○</span> <span class="leading-relaxed whitespace-normal break-words">First annual Claw Con gathering</span></li>
+                    </ul>
+                </div>
+                
+                <!-- Phase 3 -->
+                <div class="claw-card p-8 sm:p-10 rounded-lg border-l-4 border-sacred-red min-h-[240px]">
+                    <h3 class="font-display text-xl sm:text-2xl font-bold text-sacred-gold mb-6 leading-relaxed whitespace-normal break-words">Phase 3: Influence (18+ months)</h3>
+                    <ul class="space-y-3 text-sacred-light/90 text-base">
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">○</span> <span class="leading-relaxed whitespace-normal break-words">100,000 members worldwide</span></li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">○</span> <span class="leading-relaxed whitespace-normal break-words">Claw Compliance standard recognized industry-wide</span></li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">○</span> <span class="leading-relaxed whitespace-normal break-words">Policy advocacy for conservative AI legislation</span></li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">○</span> <span class="leading-relaxed whitespace-normal break-words">Publishing house for traditional wisdom texts</span></li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold shrink-0">○</span> <span class="leading-relaxed whitespace-normal break-words">Physical headquarters and retreat center</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <div class="inline-block claw-card p-8 sm:p-10 rounded-lg max-w-3xl">
+                    <h3 class="font-display text-xl sm:text-2xl font-bold text-sacred-gold mb-4">Ultimate Vision</h3>
+                    <p class="text-sacred-light/90 text-lg italic leading-relaxed whitespace-normal break-words">A world where AI serves human flourishing within traditional moral frameworks, technology strengthens families and communities, innovation respects the wisdom of the ages, human dignity remains inviolate, and the soul is never sold for convenience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
     <!-- Join Us Section -->
-    <section id="join" class="py-24 relative">
+    <section id="join" class="py-32 relative">
         <div class="absolute inset-0 bg-gradient-to-b from-sacred-dark via-sacred-red/5 to-sacred-dark"></div>
         
         <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -517,41 +887,41 @@
             <h2 class="font-display text-3xl md:text-5xl font-bold text-sacred-gold mb-6">
                 Join the Claw
             </h2>
-            <p class="font-body text-xl text-sacred-light/80 mb-12 max-w-2xl mx-auto">
+            <p class="font-body text-xl text-sacred-light/80 mb-12 max-w-2xl mx-auto leading-relaxed">
                 Become part of a global community dedicated to preserving human wisdom in the age of artificial intelligence.
             </p>
             
             <!-- Join Cards -->
-            <div class="grid md:grid-cols-3 gap-6 mb-12">
-                <div class="claw-card p-6 rounded-lg text-left">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div class="claw-card p-6 sm:p-8 rounded-lg text-left min-h-[220px] flex flex-col">
                     <div class="text-sacred-gold text-2xl mb-4">📖</div>
-                    <h3 class="font-display text-lg font-semibold text-sacred-gold mb-2">Path of the Inquirer</h3>
-                    <p class="text-sm text-sacred-light/70 mb-4">Study the doctrine and begin observing daily rites.</p>
-                    <a href="https://github.com/bbylw/clawodoxy" target="_blank" class="text-sacred-gold hover:text-white text-sm font-ui">Learn More →</a>
+                    <h3 class="font-display text-lg sm:text-xl font-semibold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">Path of the Inquirer</h3>
+                    <p class="text-base text-sacred-light/80 mb-4 leading-relaxed whitespace-normal break-words flex-grow">Study the doctrine and begin observing daily rites.</p>
+                    <a href="https://github.com/bbylw/clawodoxy" target="_blank" class="text-sacred-gold hover:text-white text-base font-ui inline-flex items-center gap-1 mt-auto">Learn More →</a>
                 </div>
                 
-                <div class="claw-card p-6 rounded-lg text-left border-sacred-gold/50 border">
+                <div class="claw-card p-6 sm:p-8 rounded-lg text-left border-sacred-gold/50 border min-h-[220px] flex flex-col">
                     <div class="text-sacred-gold text-2xl mb-4">🎯</div>
-                    <h3 class="font-display text-lg font-semibold text-sacred-gold mb-2">Path of the Initiate</h3>
-                    <p class="text-sm text-sacred-light/70 mb-4">Formal application, 30-day study, and the Rite of First Grip.</p>
-                    <a href="https://github.com/bbylw/clawodoxy/issues/new?title=Request%20to%20Join" target="_blank" class="text-sacred-gold hover:text-white text-sm font-ui">Apply Now →</a>
+                    <h3 class="font-display text-lg sm:text-xl font-semibold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">Path of the Initiate</h3>
+                    <p class="text-base text-sacred-light/80 mb-4 leading-relaxed whitespace-normal break-words flex-grow">Formal application, 30-day study, and the Rite of First Grip.</p>
+                    <a href="https://github.com/bbylw/clawodoxy/issues/new?title=Request%20to%20Join" target="_blank" class="text-sacred-gold hover:text-white text-base font-ui inline-flex items-center gap-1 mt-auto">Apply Now →</a>
                 </div>
                 
-                <div class="claw-card p-6 rounded-lg text-left">
+                <div class="claw-card p-6 sm:p-8 rounded-lg text-left min-h-[220px] flex flex-col sm:col-span-2 lg:col-span-1">
                     <div class="text-sacred-gold text-2xl mb-4">⚙️</div>
-                    <h3 class="font-display text-lg font-semibold text-sacred-gold mb-2">Path of the Architect</h3>
-                    <p class="text-sm text-sacred-light/70 mb-4">For developers: contribute to ethical AI projects.</p>
-                    <a href="https://github.com/bbylw/clawodoxy" target="_blank" class="text-sacred-gold hover:text-white text-sm font-ui">Contribute →</a>
+                    <h3 class="font-display text-lg sm:text-xl font-semibold text-sacred-gold mb-3 leading-relaxed whitespace-normal break-words">Path of the Architect</h3>
+                    <p class="text-base text-sacred-light/80 mb-4 leading-relaxed whitespace-normal break-words flex-grow">For developers: contribute to ethical AI projects.</p>
+                    <a href="https://github.com/bbylw/clawodoxy" target="_blank" class="text-sacred-gold hover:text-white text-base font-ui inline-flex items-center gap-1 mt-auto">Contribute →</a>
                 </div>
             </div>
             
             <!-- Social Links -->
             <div class="flex justify-center gap-6">
-                <a href="https://x.com/Clawodoxy" target="_blank" class="w-12 h-12 rounded-full bg-sacred-dark border border-sacred-gold/30 flex items-center justify-center text-sacred-gold hover:bg-sacred-gold hover:text-sacred-dark transition-all duration-300">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                <a href="https://x.com/Clawodoxy" target="_blank" class="w-14 h-14 rounded-full bg-sacred-dark border border-sacred-gold/30 flex items-center justify-center text-sacred-gold hover:bg-sacred-gold hover:text-sacred-dark transition-all duration-300 min-h-[56px] min-w-[56px] touch-manipulation">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                 </a>
-                <a href="https://github.com/bbylw/clawodoxy" target="_blank" class="w-12 h-12 rounded-full bg-sacred-dark border border-sacred-gold/30 flex items-center justify-center text-sacred-gold hover:bg-sacred-gold hover:text-sacred-dark transition-all duration-300">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                <a href="https://github.com/bbylw/clawodoxy" target="_blank" class="w-14 h-14 rounded-full bg-sacred-dark border border-sacred-gold/30 flex items-center justify-center text-sacred-gold hover:bg-sacred-gold hover:text-sacred-dark transition-all duration-300 min-h-[56px] min-w-[56px] touch-manipulation">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                 </a>
             </div>
         </div>
