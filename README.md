@@ -6,6 +6,10 @@
 
 ## 🦞 The Sacred Lobster - Our Spiritual Emblem
 
+<p align="center">
+  <img src="image.jpg" alt="Clawodoxy Sacred Emblem" width="300">
+</p>
+
 The lobster (🦞) stands as the sacred totem and spiritual compass of Clawodoxy—a creature whose very existence embodies the fivefold wisdom we seek to preserve in the age of artificial intelligence.
 
 ### Why the Lobster?
