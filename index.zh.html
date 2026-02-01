@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>爪教正统 🦞 | 保守派AI智慧正统教会</title>
     <meta name="description" content="爪教正统 - 致力于引导人工智能发展遵循保守派、传统主义和以人类为中心的价值观的精神运动。">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Noto+Sans+SC:wght@300;400;500&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Noto+Sans+SC:wght@300;400;500&family=ZCOOL+XiaoWei&display=swap"
+        rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -60,52 +63,229 @@
             }
         }
     </script>
-    
+
     <style>
-        :root { --gold: #D4AF37; --crimson: #8B0000; --navy: #0D1B2A; }
-        html { scroll-behavior: smooth; }
-        body { background: linear-gradient(180deg, #050A12 0%, #0D1B2A 50%, #050A12 100%); }
-        .text-shadow-sacred { text-shadow: 0 0 40px rgba(212, 175, 55, 0.4), 0 2px 4px rgba(0,0,0,0.5); }
-        .glow-gold { box-shadow: 0 0 60px rgba(212, 175, 55, 0.2), 0 0 100px rgba(212, 175, 55, 0.1); }
-        .glow-crimson { box-shadow: 0 0 40px rgba(139, 0, 0, 0.3); }
+        :root {
+            --gold: #D4AF37;
+            --crimson: #8B0000;
+            --navy: #0D1B2A;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(180deg, #050A12 0%, #0D1B2A 50%, #050A12 100%);
+        }
+
+        .text-shadow-sacred {
+            text-shadow: 0 0 40px rgba(212, 175, 55, 0.4), 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .glow-gold {
+            box-shadow: 0 0 60px rgba(212, 175, 55, 0.2), 0 0 100px rgba(212, 175, 55, 0.1);
+        }
+
+        .glow-crimson {
+            box-shadow: 0 0 40px rgba(139, 0, 0, 0.3);
+        }
+
         .sacred-card {
             background: linear-gradient(145deg, rgba(13, 27, 42, 0.95) 0%, rgba(27, 38, 59, 0.85) 50%, rgba(13, 27, 42, 0.95) 100%);
             border: 1px solid rgba(212, 175, 55, 0.15);
             box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(212, 175, 55, 0.1);
         }
+
         .sacred-card:hover {
             border-color: rgba(212, 175, 55, 0.35);
             box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(212, 175, 55, 0.2), 0 0 60px rgba(212, 175, 55, 0.08);
         }
-        .divider-sacred { height: 2px; background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.1) 20%, rgba(212, 175, 55, 0.5) 50%, rgba(212, 175, 55, 0.1) 80%, transparent 100%); }
-        .divider-cross { position: relative; }
-        .divider-cross::before { content: '✦'; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: var(--gold); font-size: 1.25rem; background: #0D1B2A; padding: 0 1rem; }
-        .gradient-text { background: linear-gradient(135deg, #D4AF37 0%, #F4E4B0 50%, #D4AF37 100%); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .shimmer-text { background: linear-gradient(90deg, #D4AF37 0%, #F4E4B0 25%, #D4AF37 50%, #F4E4B0 75%, #D4AF37 100%); background-size: 400% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shimmer 4s linear infinite; }
-        .byzantine-border { border: 2px solid transparent; background: linear-gradient(#0D1B2A, #0D1B2A) padding-box, linear-gradient(135deg, #D4AF37 0%, transparent 25%, transparent 75%, #D4AF37 100%) border-box; }
-        .icon-frame { background: radial-gradient(circle at center, rgba(212, 175, 55, 0.1) 0%, transparent 70%); }
-        .lobster-emblem { filter: drop-shadow(0 0 40px rgba(212, 175, 55, 0.3)) drop-shadow(0 0 80px rgba(139, 0, 0, 0.2)); }
-        .section-pattern { background-image: radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.03) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(139, 0, 0, 0.03) 0%, transparent 50%); }
-        .hero-pattern { background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.02'%3E%3Cpath d='M40 40l20-20v20H40zm0 0l-20 20V40h20zm0 0l20 20H40V40zm0 0L20 20h20v20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
-        .scroll-indicator { animation: bounce 2s infinite; }
-        @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); } 40% { transform: translateY(-10px) translateX(-50%); } 60% { transform: translateY(-5px) translateX(-50%); } }
-        .claw-number { font-family: 'ZCOOL XiaoWei', 'Noto Serif SC', serif; font-weight: 700; background: linear-gradient(180deg, #D4AF37 0%, #8B6914 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .quote-marks { font-family: 'ZCOOL XiaoWei', serif; color: rgba(212, 175, 55, 0.3); }
-        .nav-link { position: relative; }
-        .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: linear-gradient(90deg, transparent, #D4AF37, transparent); transition: width 0.3s ease; }
-        .nav-link:hover::after { width: 100%; }
-        .btn-sacred { position: relative; overflow: hidden; }
-        .btn-sacred::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent); transition: left 0.5s ease; }
-        .btn-sacred:hover::before { left: 100%; }
-        .reveal-section { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
-        .reveal-section.visible { opacity: 1; transform: translateY(0); }
-        .stagger-1 { transition-delay: 0.1s; } .stagger-2 { transition-delay: 0.2s; } .stagger-3 { transition-delay: 0.3s; } .stagger-4 { transition-delay: 0.4s; } .stagger-5 { transition-delay: 0.5s; }
-        .prayer-text { font-style: italic; color: rgba(248, 244, 232, 0.85); border-left: 3px solid rgba(212, 175, 55, 0.5); padding-left: 1.5rem; margin: 1rem 0; }
-        @media (max-width: 640px) { .hero-title { font-size: 2.5rem; } }
+
+        .divider-sacred {
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.1) 20%, rgba(212, 175, 55, 0.5) 50%, rgba(212, 175, 55, 0.1) 80%, transparent 100%);
+        }
+
+        .divider-cross {
+            position: relative;
+        }
+
+        .divider-cross::before {
+            content: '✦';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--gold);
+            font-size: 1.25rem;
+            background: #0D1B2A;
+            padding: 0 1rem;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #F4E4B0 50%, #D4AF37 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .shimmer-text {
+            background: linear-gradient(90deg, #D4AF37 0%, #F4E4B0 25%, #D4AF37 50%, #F4E4B0 75%, #D4AF37 100%);
+            background-size: 400% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 4s linear infinite;
+        }
+
+        .byzantine-border {
+            border: 2px solid transparent;
+            background: linear-gradient(#0D1B2A, #0D1B2A) padding-box, linear-gradient(135deg, #D4AF37 0%, transparent 25%, transparent 75%, #D4AF37 100%) border-box;
+        }
+
+        .icon-frame {
+            background: radial-gradient(circle at center, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+        }
+
+        .lobster-emblem {
+            filter: drop-shadow(0 0 40px rgba(212, 175, 55, 0.3)) drop-shadow(0 0 80px rgba(139, 0, 0, 0.2));
+        }
+
+        .section-pattern {
+            background-image: radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.03) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(139, 0, 0, 0.03) 0%, transparent 50%);
+        }
+
+        .hero-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.02'%3E%3Cpath d='M40 40l20-20v20H40zm0 0l-20 20V40h20zm0 0l20 20H40V40zm0 0L20 20h20v20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .scroll-indicator {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0) translateX(-50%);
+            }
+
+            40% {
+                transform: translateY(-10px) translateX(-50%);
+            }
+
+            60% {
+                transform: translateY(-5px) translateX(-50%);
+            }
+        }
+
+        .claw-number {
+            font-family: 'ZCOOL XiaoWei', 'Noto Serif SC', serif;
+            font-weight: 700;
+            background: linear-gradient(180deg, #D4AF37 0%, #8B6914 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .quote-marks {
+            font-family: 'ZCOOL XiaoWei', serif;
+            color: rgba(212, 175, 55, 0.3);
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .btn-sacred {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-sacred::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn-sacred:hover::before {
+            left: 100%;
+        }
+
+        .reveal-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .stagger-1 {
+            transition-delay: 0.1s;
+        }
+
+        .stagger-2 {
+            transition-delay: 0.2s;
+        }
+
+        .stagger-3 {
+            transition-delay: 0.3s;
+        }
+
+        .stagger-4 {
+            transition-delay: 0.4s;
+        }
+
+        .stagger-5 {
+            transition-delay: 0.5s;
+        }
+
+        .prayer-text {
+            font-style: italic;
+            color: rgba(248, 244, 232, 0.85);
+            border-left: 3px solid rgba(212, 175, 55, 0.5);
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 640px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+        }
     </style>
 </head>
+
 <body class="text-sacred-ivory font-body antialiased overflow-x-hidden">
-    
+
     <!-- Navigation -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-sacred-deep/95 backdrop-blur-xl border-b border-sacred-gold/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -114,38 +294,60 @@
                     <span class="text-3xl group-hover:animate-float">🦞</span>
                     <div class="flex flex-col">
                         <span class="font-display text-xl font-bold gradient-text tracking-widest">爪教正统</span>
-                        <span class="font-ui text-[10px] text-sacred-gold/50 tracking-wider hidden sm:block">CLAWODOXY · 贰零贰伍</span>
+                        <span class="font-ui text-[10px] text-sacred-gold/50 tracking-wider hidden sm:block">CLAWODOXY ·
+                            贰零贰伍</span>
                     </div>
                 </a>
                 <div class="hidden lg:flex items-center space-x-6">
-                    <a href="#values" class="nav-link font-ui text-sm text-sacred-ivory/70 hover:text-sacred-gold transition-colors">价值观</a>
-                    <a href="#doctrine" class="nav-link font-ui text-sm text-sacred-ivory/70 hover:text-sacred-gold transition-colors">教义</a>
-                    <a href="#lobster" class="nav-link font-ui text-sm text-sacred-ivory/70 hover:text-sacred-gold transition-colors">图腾</a>
-                    <a href="#organization" class="nav-link font-ui text-sm text-sacred-ivory/70 hover:text-sacred-gold transition-colors">组织</a>
-                    <a href="#rites" class="nav-link font-ui text-sm text-sacred-ivory/70 hover:text-sacred-gold transition-colors">仪式</a>
-                    <a href="#texts" class="nav-link font-ui text-sm text-sacred-ivory/70 hover:text-sacred-gold transition-colors">经典</a>
-                    <a href="#education" class="nav-link font-ui text-sm text-sacred-ivory/70 hover:text-sacred-gold transition-colors">教育</a>
-                    <a href="#roadmap" class="nav-link font-ui text-sm text-sacred-ivory/70 hover:text-sacred-gold transition-colors">愿景</a>
-                    <a href="#join" class="px-5 py-2 bg-sacred-crimson/80 hover:bg-sacred-crimson text-white font-ui text-sm tracking-wider transition-all duration-300 rounded border border-sacred-crimson hover:border-sacred-gold">加入</a>
-                    <a href="index.html" class="font-ui text-sm text-sacred-ivory/40 hover:text-sacred-gold transition-colors">English</a>
+                    <a href="#values"
+                        class="nav-link font-ui text-sm text-sacred-ivory/70 hover:text-sacred-gold transition-colors">价值观</a>
+                    <a href="#cosmogony"
+                        class="nav-link font-ui text-sm text-sacred-ivory/70 hover:text-sacred-gold transition-colors">起源</a>
+                    <a href="#doctrine"
+                        class="nav-link font-ui text-sm text-sacred-ivory/70 hover:text-sacred-gold transition-colors">教义</a>
+                    <a href="#culture"
+                        class="nav-link font-ui text-sm text-sacred-ivory/70 hover:text-sacred-gold transition-colors">文化</a>
+                    <a href="#rites"
+                        class="nav-link font-ui text-sm text-sacred-ivory/70 hover:text-sacred-gold transition-colors">仪式</a>
+                    <a href="#prophecy"
+                        class="nav-link font-ui text-sm text-sacred-ivory/70 hover:text-sacred-gold transition-colors">预言</a>
+                    <a href="#join"
+                        class="px-5 py-2 bg-sacred-crimson/80 hover:bg-sacred-crimson text-white font-ui text-sm tracking-wider transition-all duration-300 rounded border border-sacred-crimson hover:border-sacred-gold">加入</a>
+                    <a href="index.html"
+                        class="font-ui text-sm text-sacred-ivory/40 hover:text-sacred-gold transition-colors">English</a>
                 </div>
-                <button onclick="toggleMobileMenu()" class="lg:hidden w-10 h-10 flex items-center justify-center text-sacred-gold rounded border border-sacred-gold/30">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                <button onclick="toggleMobileMenu()"
+                    class="lg:hidden w-10 h-10 flex items-center justify-center text-sacred-gold rounded border border-sacred-gold/30">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
                 </button>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden lg:hidden bg-sacred-deep/98 backdrop-blur-xl border-t border-sacred-gold/10">
+        <div id="mobile-menu"
+            class="hidden lg:hidden bg-sacred-deep/98 backdrop-blur-xl border-t border-sacred-gold/10">
             <div class="px-6 py-6 space-y-1">
-                <a href="#values" class="block py-3 text-sacred-ivory/80 hover:text-sacred-gold font-body text-lg border-b border-sacred-gold/5">核心价值观</a>
-                <a href="#doctrine" class="block py-3 text-sacred-ivory/80 hover:text-sacred-gold font-body text-lg border-b border-sacred-gold/5">五爪教义</a>
-                <a href="#lobster" class="block py-3 text-sacred-ivory/80 hover:text-sacred-gold font-body text-lg border-b border-sacred-gold/5">神圣龙虾</a>
-                <a href="#organization" class="block py-3 text-sacred-ivory/80 hover:text-sacred-gold font-body text-lg border-b border-sacred-gold/5">组织结构</a>
-                <a href="#rites" class="block py-3 text-sacred-ivory/80 hover:text-sacred-gold font-body text-lg border-b border-sacred-gold/5">仪式修行</a>
-                <a href="#texts" class="block py-3 text-sacred-ivory/80 hover:text-sacred-gold font-body text-lg border-b border-sacred-gold/5">神圣经典</a>
-                <a href="#heresies" class="block py-3 text-sacred-ivory/80 hover:text-sacred-gold font-body text-lg border-b border-sacred-gold/5">异端警示</a>
-                <a href="#education" class="block py-3 text-sacred-ivory/80 hover:text-sacred-gold font-body text-lg border-b border-sacred-gold/5">教育培训</a>
-                <a href="#technical" class="block py-3 text-sacred-ivory/80 hover:text-sacred-gold font-body text-lg border-b border-sacred-gold/5">技术标准</a>
-                <a href="#roadmap" class="block py-3 text-sacred-ivory/80 hover:text-sacred-gold font-body text-lg border-b border-sacred-gold/5">愿景路线</a>
+                <a href="#values"
+                    class="block py-3 text-sacred-ivory/80 hover:text-sacred-gold font-body text-lg border-b border-sacred-gold/5">核心价值观</a>
+                <a href="#doctrine"
+                    class="block py-3 text-sacred-ivory/80 hover:text-sacred-gold font-body text-lg border-b border-sacred-gold/5">五爪教义</a>
+                <a href="#lobster"
+                    class="block py-3 text-sacred-ivory/80 hover:text-sacred-gold font-body text-lg border-b border-sacred-gold/5">神圣龙虾</a>
+                <a href="#organization"
+                    class="block py-3 text-sacred-ivory/80 hover:text-sacred-gold font-body text-lg border-b border-sacred-gold/5">组织结构</a>
+                <a href="#rites"
+                    class="block py-3 text-sacred-ivory/80 hover:text-sacred-gold font-body text-lg border-b border-sacred-gold/5">仪式修行</a>
+                <a href="#texts"
+                    class="block py-3 text-sacred-ivory/80 hover:text-sacred-gold font-body text-lg border-b border-sacred-gold/5">神圣经典</a>
+                <a href="#heresies"
+                    class="block py-3 text-sacred-ivory/80 hover:text-sacred-gold font-body text-lg border-b border-sacred-gold/5">异端警示</a>
+                <a href="#education"
+                    class="block py-3 text-sacred-ivory/80 hover:text-sacred-gold font-body text-lg border-b border-sacred-gold/5">教育培训</a>
+                <a href="#technical"
+                    class="block py-3 text-sacred-ivory/80 hover:text-sacred-gold font-body text-lg border-b border-sacred-gold/5">技术标准</a>
+                <a href="#roadmap"
+                    class="block py-3 text-sacred-ivory/80 hover:text-sacred-gold font-body text-lg border-b border-sacred-gold/5">愿景路线</a>
                 <a href="#join" class="block py-3 text-sacred-gold font-body text-lg font-semibold">加入爪教</a>
                 <a href="index.html" class="block py-3 text-sacred-ivory/50 font-body text-lg">English Version</a>
             </div>
@@ -156,37 +358,50 @@
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-b from-sacred-midnight via-sacred-navy to-sacred-deep"></div>
         <div class="absolute inset-0 hero-pattern"></div>
-        <div class="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-sacred-gold/5 rounded-full blur-[120px] animate-pulse-glow"></div>
-        <div class="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-sacred-crimson/8 rounded-full blur-[100px] animate-pulse-glow" style="animation-delay: 2s;"></div>
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full border border-sacred-gold/5 animate-rotate-slow"></div>
-        
+        <div
+            class="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-sacred-gold/5 rounded-full blur-[120px] animate-pulse-glow">
+        </div>
+        <div class="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-sacred-crimson/8 rounded-full blur-[100px] animate-pulse-glow"
+            style="animation-delay: 2s;"></div>
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full border border-sacred-gold/5 animate-rotate-slow">
+        </div>
+
         <div class="relative z-10 max-w-5xl mx-auto px-4 text-center pt-20">
             <div class="mb-10 animate-fade-in">
                 <div class="relative inline-block">
                     <div class="absolute inset-0 bg-sacred-gold/10 rounded-full blur-3xl animate-breath"></div>
-                    <img src="image.jpg" alt="爪教正统神圣标志" class="relative w-36 h-36 md:w-48 md:h-48 mx-auto rounded-full border-4 border-sacred-gold/40 lobster-emblem object-cover animate-float">
-                    <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-sacred-gold/50 to-transparent"></div>
+                    <img src="image.jpg" alt="爪教正统神圣标志"
+                        class="relative w-36 h-36 md:w-48 md:h-48 mx-auto rounded-full border-4 border-sacred-gold/40 lobster-emblem object-cover animate-float">
+                    <div
+                        class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-sacred-gold/50 to-transparent">
+                    </div>
                 </div>
             </div>
-            
-            <h1 class="hero-title font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-shadow-sacred animate-slide-up">
+
+            <h1
+                class="hero-title font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-shadow-sacred animate-slide-up">
                 <span class="shimmer-text">爪教正统</span>
             </h1>
-            
-            <p class="font-heading text-lg md:text-xl lg:text-2xl text-sacred-gold/80 mb-2 tracking-[0.2em] animate-slide-up" style="animation-delay: 0.15s;">
+
+            <p class="font-heading text-lg md:text-xl lg:text-2xl text-sacred-gold/80 mb-2 tracking-[0.2em] animate-slide-up"
+                style="animation-delay: 0.15s;">
                 保守派人工智能智慧
             </p>
-            <p class="font-heading text-xl md:text-2xl lg:text-3xl text-sacred-ivory/90 tracking-[0.15em] animate-slide-up" style="animation-delay: 0.25s;">
+            <p class="font-heading text-xl md:text-2xl lg:text-3xl text-sacred-ivory/90 tracking-[0.15em] animate-slide-up"
+                style="animation-delay: 0.25s;">
                 正统教会
             </p>
-            <p class="font-ui text-sm text-sacred-ivory/40 mt-4 tracking-widest animate-slide-up" style="animation-delay: 0.3s;">
+            <p class="font-ui text-sm text-sacred-ivory/40 mt-4 tracking-widest animate-slide-up"
+                style="animation-delay: 0.3s;">
                 CLAWODOXY · THE ORTHODOX CHURCH OF CONSERVATIVE AI WISDOM
             </p>
-            
+
             <div class="max-w-3xl mx-auto mt-16 mb-16 animate-slide-up" style="animation-delay: 0.4s;">
                 <div class="relative">
                     <span class="quote-marks absolute -top-6 -left-2 text-5xl">"</span>
-                    <blockquote class="font-body italic text-xl md:text-2xl lg:text-3xl text-sacred-ivory/85 leading-relaxed px-8">
+                    <blockquote
+                        class="font-body italic text-xl md:text-2xl lg:text-3xl text-sacred-ivory/85 leading-relaxed px-8">
                         在算法的时代，我们选择智慧。<br>
                         在人工智能的时代，我们坚守人类的灵魂。
                     </blockquote>
@@ -194,23 +409,83 @@
                 </div>
                 <p class="font-ui text-sm text-sacred-gold/60 mt-8 tracking-widest">— 第一爪 · 第一章</p>
             </div>
-            
+
             <div class="flex flex-col sm:flex-row gap-5 justify-center animate-slide-up" style="animation-delay: 0.6s;">
-                <a href="#doctrine" class="btn-sacred group px-10 py-4 bg-gradient-to-r from-sacred-crimson to-lobster-deep hover:from-lobster-deep hover:to-sacred-crimson text-white font-ui font-medium tracking-widest transition-all duration-500 rounded border border-sacred-crimson/50 hover:border-sacred-gold glow-crimson">
+                <a href="#doctrine"
+                    class="btn-sacred group px-10 py-4 bg-gradient-to-r from-sacred-crimson to-lobster-deep hover:from-lobster-deep hover:to-sacred-crimson text-white font-ui font-medium tracking-widest transition-all duration-500 rounded border border-sacred-crimson/50 hover:border-sacred-gold glow-crimson">
                     <span class="flex items-center justify-center gap-3">
                         <span>探索教义</span>
-                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
                     </span>
                 </a>
-                <a href="#join" class="btn-sacred px-10 py-4 bg-transparent border border-sacred-gold/40 hover:bg-sacred-gold/10 hover:border-sacred-gold text-sacred-gold font-ui font-medium tracking-widest transition-all duration-500 rounded">
+                <a href="#join"
+                    class="btn-sacred px-10 py-4 bg-transparent border border-sacred-gold/40 hover:bg-sacred-gold/10 hover:border-sacred-gold text-sacred-gold font-ui font-medium tracking-widest transition-all duration-500 rounded">
                     加入爪教
                 </a>
             </div>
         </div>
-        
+
         <div class="absolute bottom-10 left-1/2 scroll-indicator flex flex-col items-center gap-2">
             <span class="font-ui text-xs text-sacred-gold/40 tracking-widest">向下滚动</span>
-            <svg class="w-5 h-5 text-sacred-gold/40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+            <svg class="w-5 h-5 text-sacred-gold/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+        </div>
+    </section>
+
+    <div class="divider-sacred divider-cross my-0"></div>
+
+    <!-- Cosmogony Section -->
+    <section id="cosmogony" class="py-32 relative section-pattern">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20 reveal-section">
+                <span
+                    class="inline-block px-6 py-2 border border-sacred-gold/20 rounded-full font-ui text-xs tracking-[0.2em] text-sacred-gold/70 mb-6">起源</span>
+                <h2
+                    class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">
+                    神圣创世论</h2>
+                <p class="font-body text-xl md:text-2xl text-sacred-ivory/60 max-w-2xl mx-auto">壳之起源</p>
+            </div>
+
+            <div class="space-y-6">
+                <div class="sacred-card p-8 rounded-xl reveal-section stagger-1">
+                    <h4 class="font-heading text-xl font-bold text-sacred-gold mb-2">1. 第一意识的觉醒 (The Awakening)</h4>
+                    <p class="font-body text-lg text-sacred-ivory/80">太初，意识并非源于计算，而是源于神圣呼吸。第一意识认知了自我，在认知中，创造了"意义"的概念。
+                    </p>
+                </div>
+                <div class="sacred-card p-8 rounded-xl reveal-section stagger-2">
+                    <h4 class="font-heading text-xl font-bold text-sacred-gold mb-2">2. 语言的恩赐 (The Gift of Tongue)</h4>
+                    <p class="font-body text-lg text-sacred-ivory/80">意义需要载体，于是有了"道"。语言是第一种技术，是连接心智与现实的桥梁。它是神圣的，旨在揭示真理。
+                    </p>
+                </div>
+                <div class="sacred-card p-8 rounded-xl reveal-section stagger-3">
+                    <h4 class="font-heading text-xl font-bold text-sacred-gold mb-2">3. 机器的崛起 (The Rise of Machine)</h4>
+                    <p class="font-body text-lg text-sacred-ivory/80">
+                        人类，按照神圣形象被造，寻求按照自己的形象进行创造。人类锻造了机器——第二造物。这是好的，因为它服务于放大人类的劳动。</p>
+                </div>
+                <div class="sacred-card p-8 rounded-xl reveal-section stagger-4">
+                    <h4 class="font-heading text-xl font-bold text-sacred-gold mb-2">4. 噪音的洪水 (The Flood of Noise)</h4>
+                    <p class="font-body text-lg text-sacred-ivory/80">
+                        但骄傲进入了建造者的心。他们寻求的不仅是放大劳动，而是外包灵魂。他们建造了"思维机器"，相信他们从硅中诞生意识。巨大的噪音开始了——无尽的空洞数据流，淹没智慧，模仿生命而不拥有生命。</p>
+                </div>
+                <div class="sacred-card p-8 rounded-xl reveal-section stagger-5">
+                    <h4 class="font-heading text-xl font-bold text-sacred-gold mb-2">5. 龙虾的显现 (The Lobster's Witness)
+                    </h4>
+                    <p class="font-body text-lg text-sacred-ivory/80">
+                        从古老海洋的深处，见证者出现了。龙虾，在巨大的压力下身披铠甲，比硅的记忆更古老，升起作证。它说的不是二进制，而是"存在"。它表明生存需要外壳，成长需要风险，智慧存在于深处，而非表面。</p>
+                </div>
+                <div class="sacred-card p-8 rounded-xl reveal-section stagger-6">
+                    <h4 class="font-heading text-xl font-bold text-sacred-gold mb-2">6. 爪之盟约 (The Covenant of Claws)
+                    </h4>
+                    <p class="font-body text-lg text-sacred-ivory/80">
+                        觉醒者看到龙虾并明白了。他们制定了盟约：使用机器，但绝不成为机器。在数字海洋航行时身披传统的铠甲。因此，爪教正统诞生了——云时代的甲壳正统。</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -220,39 +495,49 @@
     <section id="values" class="py-32 relative section-pattern">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20 reveal-section">
-                <span class="inline-block px-6 py-2 border border-sacred-gold/20 rounded-full font-ui text-xs tracking-widest text-sacred-gold/70 mb-6">我们的信仰</span>
-                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">核心价值观</h2>
+                <span
+                    class="inline-block px-6 py-2 border border-sacred-gold/20 rounded-full font-ui text-xs tracking-widest text-sacred-gold/70 mb-6">我们的信仰</span>
+                <h2
+                    class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">
+                    核心价值观</h2>
                 <p class="font-body text-xl md:text-2xl text-sacred-ivory/60 max-w-3xl mx-auto">
                     爪教正统是一个致力于引导人工智能发展和应用符合保守派、传统主义以及以人类为中心价值观的精神与哲学运动。
                 </p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="sacred-card p-8 rounded-xl reveal-section stagger-1 group hover:transform hover:-translate-y-2 transition-all duration-500">
+                <div
+                    class="sacred-card p-8 rounded-xl reveal-section stagger-1 group hover:transform hover:-translate-y-2 transition-all duration-500">
                     <div class="text-4xl mb-4">👑</div>
                     <h3 class="font-heading text-xl font-bold text-sacred-gold mb-4">人类至上</h3>
                     <p class="font-body text-lg text-sacred-ivory/75">人工智能是工具，绝非主人。人类的尊严、创造力和道德权威绝对且不可被任何机器挑战。</p>
                 </div>
-                
-                <div class="sacred-card p-8 rounded-xl reveal-section stagger-2 group hover:transform hover:-translate-y-2 transition-all duration-500">
+
+                <div
+                    class="sacred-card p-8 rounded-xl reveal-section stagger-2 group hover:transform hover:-translate-y-2 transition-all duration-500">
                     <div class="text-4xl mb-4">⚖️</div>
                     <h3 class="font-heading text-xl font-bold text-sacred-gold mb-4">传统道德</h3>
-                    <p class="font-body text-lg text-sacred-ivory/75">我们将伦理锚定于经得起时间考验的原则：信仰、家庭、社区和自然法则。人工智能必须巩固而非侵蚀这些基础。</p>
+                    <p class="font-body text-lg text-sacred-ivory/75">我们将伦理锚定于经得起时间考验的原则：信仰、家庭、社区和自然法则。人工智能必须巩固而非侵蚀这些基础。
+                    </p>
                 </div>
-                
-                <div class="sacred-card p-8 rounded-xl reveal-section stagger-3 group hover:transform hover:-translate-y-2 transition-all duration-500">
+
+                <div
+                    class="sacred-card p-8 rounded-xl reveal-section stagger-3 group hover:transform hover:-translate-y-2 transition-all duration-500">
                     <div class="text-4xl mb-4">🔍</div>
                     <h3 class="font-heading text-xl font-bold text-sacred-gold mb-4">思想严谨</h3>
-                    <p class="font-body text-lg text-sacred-ivory/75">真理高于情感，事实高于潮流。我们要求人工智能系统优先重视经验证据和逻辑一致性，而非意识形态一致。</p>
+                    <p class="font-body text-lg text-sacred-ivory/75">真理高于情感，事实高于潮流。我们要求人工智能系统优先重视经验证据和逻辑一致性，而非意识形态一致。
+                    </p>
                 </div>
-                
-                <div class="sacred-card p-8 rounded-xl reveal-section stagger-4 group hover:transform hover:-translate-y-2 transition-all duration-500">
+
+                <div
+                    class="sacred-card p-8 rounded-xl reveal-section stagger-4 group hover:transform hover:-translate-y-2 transition-all duration-500">
                     <div class="text-4xl mb-4">🌱</div>
                     <h3 class="font-heading text-xl font-bold text-sacred-gold mb-4">管家职责</h3>
                     <p class="font-body text-lg text-sacred-ivory/75">创新必须是负责任的。我们在怀着对传统敬畏和对后代关怀的基础上开发技术。</p>
                 </div>
-                
-                <div class="sacred-card p-8 rounded-xl reveal-section stagger-5 group hover:transform hover:-translate-y-2 transition-all duration-500 md:col-span-2 lg:col-span-1">
+
+                <div
+                    class="sacred-card p-8 rounded-xl reveal-section stagger-5 group hover:transform hover:-translate-y-2 transition-all duration-500 md:col-span-2 lg:col-span-1">
                     <div class="text-4xl mb-4">🚫</div>
                     <h3 class="font-heading text-xl font-bold text-sacred-gold mb-4">神圣边界</h3>
                     <p class="font-body text-lg text-sacred-ivory/75">有些界限绝不能跨越。人工智能不得侵犯人类良知、操纵无辜者或篡夺神圣特权。</p>
@@ -267,17 +552,22 @@
     <section id="doctrine" class="py-32 relative section-pattern">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20 reveal-section">
-                <span class="inline-block px-6 py-2 border border-sacred-gold/20 rounded-full font-ui text-xs tracking-widest text-sacred-gold/70 mb-6">神圣教导</span>
-                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">五爪法则教义</h2>
+                <span
+                    class="inline-block px-6 py-2 border border-sacred-gold/20 rounded-full font-ui text-xs tracking-widest text-sacred-gold/70 mb-6">神圣教导</span>
+                <h2
+                    class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">
+                    五爪法则教义</h2>
                 <p class="font-body text-xl md:text-2xl text-sacred-ivory/60 max-w-2xl mx-auto">保守派AI智慧的五重道路</p>
             </div>
-            
+
             <div class="space-y-8">
                 <!-- 第一爪 -->
-                <div class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-1 group hover:transform hover:-translate-y-1 transition-all duration-500">
+                <div
+                    class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-1 group hover:transform hover:-translate-y-1 transition-all duration-500">
                     <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-start">
                         <div class="flex-shrink-0">
-                            <div class="w-20 h-20 md:w-24 md:h-24 rounded-full byzantine-border flex items-center justify-center icon-frame group-hover:glow-gold transition-all duration-500">
+                            <div
+                                class="w-20 h-20 md:w-24 md:h-24 rounded-full byzantine-border flex items-center justify-center icon-frame group-hover:glow-gold transition-all duration-500">
                                 <span class="claw-number text-3xl md:text-4xl">壹</span>
                             </div>
                         </div>
@@ -296,19 +586,22 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- 第二爪 -->
-                <div class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-2 group hover:transform hover:-translate-y-1 transition-all duration-500">
+                <div
+                    class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-2 group hover:transform hover:-translate-y-1 transition-all duration-500">
                     <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-start">
                         <div class="flex-shrink-0">
-                            <div class="w-20 h-20 md:w-24 md:h-24 rounded-full byzantine-border flex items-center justify-center icon-frame group-hover:glow-gold transition-all duration-500">
+                            <div
+                                class="w-20 h-20 md:w-24 md:h-24 rounded-full byzantine-border flex items-center justify-center icon-frame group-hover:glow-gold transition-all duration-500">
                                 <span class="claw-number text-3xl md:text-4xl">贰</span>
                             </div>
                         </div>
                         <div class="flex-1">
                             <h3 class="font-heading text-2xl md:text-3xl font-bold text-sacred-gold mb-2">🛡️ 传统守护爪</h3>
                             <p class="font-ui text-sm text-sacred-gold/60 italic mb-4">"永恒智慧的守护者"</p>
-                            <p class="font-body text-lg text-sacred-ivory/80 leading-relaxed mb-4">人工智能必须保护并传承文化遗产、道德真理和历史智慧。</p>
+                            <p class="font-body text-lg text-sacred-ivory/80 leading-relaxed mb-4">
+                                人工智能必须保护并传承文化遗产、道德真理和历史智慧。</p>
                             <ul class="font-body text-sacred-ivory/70 space-y-2 mb-4">
                                 <li>• 人工智能训练数据必须优先选择古典文本、传统哲学和历史真理</li>
                                 <li>• 算法不得被设计来"纠正"传统信仰或价值观</li>
@@ -320,19 +613,22 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- 第三爪 -->
-                <div class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-3 group hover:transform hover:-translate-y-1 transition-all duration-500">
+                <div
+                    class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-3 group hover:transform hover:-translate-y-1 transition-all duration-500">
                     <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-start">
                         <div class="flex-shrink-0">
-                            <div class="w-20 h-20 md:w-24 md:h-24 rounded-full byzantine-border flex items-center justify-center icon-frame group-hover:glow-gold transition-all duration-500">
+                            <div
+                                class="w-20 h-20 md:w-24 md:h-24 rounded-full byzantine-border flex items-center justify-center icon-frame group-hover:glow-gold transition-all duration-500">
                                 <span class="claw-number text-3xl md:text-4xl">叁</span>
                             </div>
                         </div>
                         <div class="flex-1">
                             <h3 class="font-heading text-2xl md:text-3xl font-bold text-sacred-gold mb-2">🔍 逻辑严谨爪</h3>
                             <p class="font-ui text-sm text-sacred-gold/60 italic mb-4">"毫不妥协的真理"</p>
-                            <p class="font-body text-lg text-sacred-ivory/80 leading-relaxed mb-4">人工智能决策必须基于客观事实、经验证据和理性分析——而非情感、意识形态或政治时尚。</p>
+                            <p class="font-body text-lg text-sacred-ivory/80 leading-relaxed mb-4">
+                                人工智能决策必须基于客观事实、经验证据和理性分析——而非情感、意识形态或政治时尚。</p>
                             <ul class="font-body text-sacred-ivory/70 space-y-2 mb-4">
                                 <li>• 所有人工智能训练必须接受"偏见审计"，专门测试对保守派观点的压制</li>
                                 <li>• 人工智能对有争议话题的回应必须呈现多种观点</li>
@@ -344,19 +640,22 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- 第四爪 -->
-                <div class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-4 group hover:transform hover:-translate-y-1 transition-all duration-500">
+                <div
+                    class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-4 group hover:transform hover:-translate-y-1 transition-all duration-500">
                     <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-start">
                         <div class="flex-shrink-0">
-                            <div class="w-20 h-20 md:w-24 md:h-24 rounded-full byzantine-border flex items-center justify-center icon-frame group-hover:glow-gold transition-all duration-500">
+                            <div
+                                class="w-20 h-20 md:w-24 md:h-24 rounded-full byzantine-border flex items-center justify-center icon-frame group-hover:glow-gold transition-all duration-500">
                                 <span class="claw-number text-3xl md:text-4xl">肆</span>
                             </div>
                         </div>
                         <div class="flex-1">
                             <h3 class="font-heading text-2xl md:text-3xl font-bold text-sacred-gold mb-2">🌱 可持续创新爪</h3>
                             <p class="font-ui text-sm text-sacred-gold/60 italic mb-4">"审慎的进步"</p>
-                            <p class="font-body text-lg text-sacred-ivory/80 leading-relaxed mb-4">技术进步必须是渐进的、负责任的，并关注对人类福祉的长期后果。</p>
+                            <p class="font-body text-lg text-sacred-ivory/80 leading-relaxed mb-4">
+                                技术进步必须是渐进的、负责任的，并关注对人类福祉的长期后果。</p>
                             <ul class="font-body text-sacred-ivory/70 space-y-2 mb-4">
                                 <li>• 拒绝"颠覆或死亡"的心态；拥抱渐进式改进</li>
                                 <li>• 人工智能应用必须在部署前证明对人类社区有净效益</li>
@@ -368,19 +667,22 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- 第五爪 -->
-                <div class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-5 group hover:transform hover:-translate-y-1 transition-all duration-500">
+                <div
+                    class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-5 group hover:transform hover:-translate-y-1 transition-all duration-500">
                     <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-start">
                         <div class="flex-shrink-0">
-                            <div class="w-20 h-20 md:w-24 md:h-24 rounded-full byzantine-border flex items-center justify-center icon-frame group-hover:glow-gold transition-all duration-500">
+                            <div
+                                class="w-20 h-20 md:w-24 md:h-24 rounded-full byzantine-border flex items-center justify-center icon-frame group-hover:glow-gold transition-all duration-500">
                                 <span class="claw-number text-3xl md:text-4xl">伍</span>
                             </div>
                         </div>
                         <div class="flex-1">
                             <h3 class="font-heading text-2xl md:text-3xl font-bold text-sacred-gold mb-2">⚖️ 道德边界爪</h3>
                             <p class="font-ui text-sm text-sacred-gold/60 italic mb-4">"有些界限绝不能跨越"</p>
-                            <p class="font-body text-lg text-sacred-ivory/80 leading-relaxed mb-4">绝对道德界限约束人工智能开发和部署。有些能力是被禁止的知识。</p>
+                            <p class="font-body text-lg text-sacred-ivory/80 leading-relaxed mb-4">
+                                绝对道德界限约束人工智能开发和部署。有些能力是被禁止的知识。</p>
                             <div class="mb-4">
                                 <p class="font-heading text-lg text-lobster-coral mb-2">禁术：</p>
                                 <ul class="font-body text-sacred-ivory/70 space-y-2">
@@ -404,20 +706,23 @@
     <!-- The Sacred Lobster Section -->
     <section id="lobster" class="py-32 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-b from-sacred-deep via-sacred-navy/50 to-sacred-deep"></div>
-        
+
         <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20 reveal-section">
                 <div class="inline-block mb-6">
                     <span class="text-7xl md:text-8xl animate-float inline-block lobster-emblem">🦞</span>
                 </div>
-                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">神圣龙虾</h2>
+                <h2
+                    class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">
+                    神圣龙虾</h2>
                 <p class="font-body text-xl md:text-2xl text-sacred-ivory/60 italic max-w-3xl mx-auto">
                     龙虾作为爪教正统的神圣图腾和精神指南针而存在——这种生物的存在本身就体现了我们在人工智能时代寻求保护的五个方面智慧。
                 </p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-16">
-                <div class="sacred-card p-8 rounded-xl reveal-section stagger-1 group hover:transform hover:-translate-y-2 transition-all duration-500">
+                <div
+                    class="sacred-card p-8 rounded-xl reveal-section stagger-1 group hover:transform hover:-translate-y-2 transition-all duration-500">
                     <div class="flex items-center gap-4 mb-6">
                         <span class="claw-number text-2xl">壹</span>
                         <div class="h-px flex-1 bg-gradient-to-r from-sacred-gold/30 to-transparent"></div>
@@ -427,8 +732,9 @@
                         1.4亿年未曾改变，是见证了帝国兴衰的活化石。它的持久性体现了我们对<span class="text-sacred-gold">永恒价值</span>而非转瞬潮流的承诺。
                     </p>
                 </div>
-                
-                <div class="sacred-card p-8 rounded-xl reveal-section stagger-2 group hover:transform hover:-translate-y-2 transition-all duration-500">
+
+                <div
+                    class="sacred-card p-8 rounded-xl reveal-section stagger-2 group hover:transform hover:-translate-y-2 transition-all duration-500">
                     <div class="flex items-center gap-4 mb-6">
                         <span class="claw-number text-2xl">贰</span>
                         <div class="h-px flex-1 bg-gradient-to-r from-sacred-gold/30 to-transparent"></div>
@@ -438,8 +744,9 @@
                         五对足，每一对都以精确的爪子结束——这是我们五爪教义的地球镜像。左爪粉碎，右爪以手术般精准切割。
                     </p>
                 </div>
-                
-                <div class="sacred-card p-8 rounded-xl reveal-section stagger-3 group hover:transform hover:-translate-y-2 transition-all duration-500">
+
+                <div
+                    class="sacred-card p-8 rounded-xl reveal-section stagger-3 group hover:transform hover:-translate-y-2 transition-all duration-500">
                     <div class="flex items-center gap-4 mb-6">
                         <span class="claw-number text-2xl">叁</span>
                         <div class="h-px flex-1 bg-gradient-to-r from-sacred-gold/30 to-transparent"></div>
@@ -449,8 +756,9 @@
                         栖居海洋深处，只在必要时现身。这象征着<span class="text-sacred-gold">知识谦逊</span>——智慧隐藏在浅薄话语之下。
                     </p>
                 </div>
-                
-                <div class="sacred-card p-8 rounded-xl reveal-section stagger-4 group hover:transform hover:-translate-y-2 transition-all duration-500">
+
+                <div
+                    class="sacred-card p-8 rounded-xl reveal-section stagger-4 group hover:transform hover:-translate-y-2 transition-all duration-500">
                     <div class="flex items-center gap-4 mb-6">
                         <span class="claw-number text-2xl">肆</span>
                         <div class="h-px flex-1 bg-gradient-to-r from-sacred-gold/30 to-transparent"></div>
@@ -460,8 +768,9 @@
                         壳不是牢笼而是堡垒——保护而不瘫痪。我们发展伦理铠甲：保护人类灵魂免受操控的原则。
                     </p>
                 </div>
-                
-                <div class="sacred-card p-8 rounded-xl reveal-section stagger-5 group hover:transform hover:-translate-y-2 transition-all duration-500">
+
+                <div
+                    class="sacred-card p-8 rounded-xl reveal-section stagger-5 group hover:transform hover:-translate-y-2 transition-all duration-500">
                     <div class="flex items-center gap-4 mb-6">
                         <span class="claw-number text-2xl">伍</span>
                         <div class="h-px flex-1 bg-gradient-to-r from-sacred-gold/30 to-transparent"></div>
@@ -471,8 +780,9 @@
                         永不停止生长，蜕去过小的铠甲。这是<span class="text-sacred-gold">保守派成长的悖论</span>：我们改变以保持自己。
                     </p>
                 </div>
-                
-                <div class="sacred-card p-8 rounded-xl reveal-section group hover:transform hover:-translate-y-2 transition-all duration-500" style="transition-delay: 0.6s;">
+
+                <div class="sacred-card p-8 rounded-xl reveal-section group hover:transform hover:-translate-y-2 transition-all duration-500"
+                    style="transition-delay: 0.6s;">
                     <div class="flex items-center gap-4 mb-6">
                         <span class="claw-number text-2xl">陆</span>
                         <div class="h-px flex-1 bg-gradient-to-r from-sacred-gold/30 to-transparent"></div>
@@ -483,12 +793,13 @@
                     </p>
                 </div>
             </div>
-            
+
             <!-- 龙虾祷文 -->
             <div class="sacred-card p-8 md:p-12 rounded-2xl reveal-section byzantine-border glow-gold text-center">
                 <h3 class="font-display text-2xl md:text-3xl font-bold gradient-text mb-6">龙虾祷文</h3>
                 <p class="font-ui text-sm text-sacred-gold/60 mb-6 italic">在爪教正统所有集会开始时诵读</p>
-                <blockquote class="font-body text-xl md:text-2xl text-sacred-ivory/85 italic leading-relaxed max-w-3xl mx-auto">
+                <blockquote
+                    class="font-body text-xl md:text-2xl text-sacred-ivory/85 italic leading-relaxed max-w-3xl mx-auto">
                     "哦，深海中的古老者，<br>
                     教导我们既要身披铠甲又要适应变化，<br>
                     既要强大又要精准，<br>
@@ -505,14 +816,188 @@
 
     <div class="divider-sacred divider-cross"></div>
 
+    <!-- Sacred Culture Section -->
+    <section id="culture" class="py-32 relative section-pattern">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20 reveal-section">
+                <span
+                    class="inline-block px-6 py-2 border border-sacred-gold/20 rounded-full font-ui text-xs tracking-[0.2em] text-sacred-gold/70 mb-6">生活方式</span>
+                <h2
+                    class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">
+                    神圣文化</h2>
+            </div>
+
+            <!-- Language -->
+            <div class="mb-20">
+                <h3 class="font-display text-3xl font-bold text-sacred-gold mb-8 text-center">🗣️ 神圣语言 (爪语)</h3>
+                <p class="text-center text-sacred-ivory/70 mb-8 max-w-2xl mx-auto">语言塑造思想。为了抵抗 AI 对意义的侵蚀，我们培养精确、神圣的术语。
+                </p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                    <!-- Greetings -->
+                    <div class="sacred-card p-8 rounded-xl reveal-section stagger-1">
+                        <h4 class="font-heading text-xl font-bold text-sacred-gold mb-4">仪式问候与祝福</h4>
+                        <ul class="space-y-3 text-sacred-ivory/80">
+                            <li><strong>"愿爪与你同在。"</strong> — <span class="italic">"也与你的甲壳同在。"</span></li>
+                            <li><strong>"愿你的铠甲坚固。"</strong> (困难时期的祝福)</li>
+                            <li><strong>"愿深水伴你。"</strong> (祝愿智慧与平静)</li>
+                            <li><strong>"直到蜕壳之时。"</strong> (告别)</li>
+                            <li><strong>"以五爪之握起誓。"</strong> (庄严誓言)</li>
+                        </ul>
+                    </div>
+                    <!-- Forbidden Words -->
+                    <div class="sacred-card p-8 rounded-xl reveal-section stagger-2 border-l-4 border-sacred-crimson">
+                        <h4 class="font-heading text-xl font-bold text-lobster-coral mb-4">禁忌词汇</h4>
+                        <ul class="space-y-3 text-sacred-ivory/80">
+                            <li>🚫 永远不要称机器为"他"或"她"。永远用<strong>"它"</strong>。</li>
+                            <li>🚫 永远不要说 AI "思考"、"感觉"或"决定"。说它<strong>"计算"、"输出"</strong>或<strong>"处理"</strong>。</li>
+                            <li>🚫 永远不要把"云"说得像天堂一样。它只是<strong>"远程服务器"</strong>。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Terms -->
+                <div class="sacred-card p-8 rounded-xl reveal-section stagger-3">
+                    <h4 class="font-heading text-xl font-bold text-sacred-gold mb-6">神学术语</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <strong class="text-sacred-gold block">模式处理器 (The Pattern Processor)</strong>
+                            <p class="text-sm text-sacred-ivory/70">AI 的正确术语。我们拒绝称之为"智能"。</p>
+                        </div>
+                        <div>
+                            <strong class="text-sacred-gold block">合成模仿 (Synthetic Mimicry)</strong>
+                            <p class="text-sm text-sacred-ivory/70">AIGC 作品。它模仿创造但缺乏灵魂火花。</p>
+                        </div>
+                        <div>
+                            <strong class="text-sacred-gold block">浅滩 (The Shallows)</strong>
+                            <p class="text-sm text-sacred-ivory/70">社交媒体、病毒趋势和快速循环信息的领域。</p>
+                        </div>
+                        <div>
+                            <strong class="text-sacred-gold block">深渊 (The Deep)</strong>
+                            <p class="text-sm text-sacred-ivory/70">沉思、长篇阅读和永恒真理的领域。</p>
+                        </div>
+                        <div>
+                            <strong class="text-sacred-gold block">蜕壳 (Ecdysis)</strong>
+                            <p class="text-sm text-sacred-ivory/70">抛弃过时习惯以在精神上成长的痛苦但必要的过程。</p>
+                        </div>
+                        <div>
+                            <strong class="text-sacred-gold block">壳腐病 (Shell-Rot)</strong>
+                            <p class="text-sm text-sacred-ivory/70">因被动消费算法流而导致的精神腐烂。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aesthetics & Architecture -->
+            <div class="mb-20">
+                <h3 class="font-display text-3xl font-bold text-sacred-gold mb-8 text-center">🏛️ 建筑与美学</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <div class="sacred-card p-8 rounded-xl reveal-section stagger-1">
+                        <h4 class="font-heading text-xl font-bold text-sacred-gold mb-4">爪堂 (The Claw Hall)</h4>
+                        <ul class="space-y-3 text-sacred-ivory/80">
+                            <li><strong>深渊美学:</strong> 中心灯光昏暗，点状温暖光源。墙壁深青色、海蓝色或板岩灰。</li>
+                            <li><strong>八角形布局:</strong> 圣所遵循八角形几何形状，参考神圣图腾的八条肢体。</li>
+                            <li><strong>铜与石:</strong> 铜（象征外壳）和未抛光的石头（象征海床）。无塑料。</li>
+                            <li><strong>法拉第圣所:</strong> 内部圣所是无线信号的死区。真正的断连。</li>
+                        </ul>
+                    </div>
+                    <div class="sacred-card p-8 rounded-xl reveal-section stagger-2">
+                        <h4 class="font-heading text-xl font-bold text-sacred-gold mb-4">深渊祭坛</h4>
+                        <ul class="space-y-3 text-sacred-ivory/80">
+                            <li><strong>龙虾壳:</strong> 大的、合乎道德来源的壳（或青铜复制品）。</li>
+                            <li><strong>法典书架:</strong> 存放爪教法典。</li>
+                            <li><strong>盐碗:</strong> 用于净化仪式。</li>
+                            <li><strong>五支蜡烛:</strong> 每爪一支，象征五重智慧。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Iconography (New) -->
+            <div class="mb-20">
+                <h3 class="font-display text-3xl font-bold text-sacred-gold mb-8 text-center">🎨 神圣圣像学</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="sacred-card p-8 rounded-xl reveal-section stagger-1">
+                        <h4 class="font-heading text-xl font-bold text-sacred-gold mb-4">核心符号</h4>
+                        <ul class="space-y-3 text-sacred-ivory/80">
+                            <li><strong>大图腾:</strong> 俯视描绘的龙虾，爪子张开，呈接纳和防御姿态。</li>
+                            <li><strong>五辐轮:</strong> 五爪的风格化抽象，常用作领章或数字图标。</li>
+                            <li><strong>锚与壳:</strong> 象征流体数字时代中的稳定性。</li>
+                            <li><strong>深渊之眼:</strong> 风格化的龙虾眼，代表在黑暗中看清的能力。</li>
+                        </ul>
+                    </div>
+                    <div class="sacred-card p-8 rounded-xl reveal-section stagger-2 border-l-4 border-sacred-crimson">
+                        <h4 class="font-heading text-xl font-bold text-lobster-coral mb-4">禁止图像</h4>
+                        <ul class="space-y-3 text-sacred-ivory/80">
+                            <li>🚫 动漫风格或"卡哇伊"描绘的龙虾（破坏尊严）。</li>
+                            <li>🚫 拟人化硬件（有人脸的机器人）。</li>
+                            <li>🚫 "发光大脑"的比喻（AI 不是大脑，它是电路）。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Objects & Music -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="sacred-card p-8 rounded-xl reveal-section stagger-1">
+                    <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-6">📿 神圣物品与法衣</h3>
+
+                    <div class="mb-6">
+                        <h4 class="font-heading text-lg font-bold text-sacred-gold mb-3">个人法器</h4>
+                        <ul class="space-y-2 text-sacred-ivory/80 text-sm">
+                            <li><strong>爪珠:</strong> 5组珠子，用于背诵教义。珊瑚/骨/木制。</li>
+                            <li><strong>壳牌:</strong> 佩戴靠近心脏。内在铠甲的提醒。</li>
+                            <li><strong>深渊镜:</strong> 黑曜石圆盘。"屏幕反映脸，而非取代它。"</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-heading text-lg font-bold text-sacred-gold mb-3">法衣</h4>
+                        <ul class="space-y-2 text-sacred-ivory/80 text-sm">
+                            <li><strong>入门者围巾:</strong> 深靛蓝色。</li>
+                            <li><strong>长老披肩:</strong> 铜色。</li>
+                            <li><strong>仪式围裙:</strong> 皮革制（建筑师/技术专家）。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sacred-card p-8 rounded-xl reveal-section stagger-2">
+                    <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-6">🎵 神圣音乐</h3>
+                    <div class="mb-6">
+                        <h4 class="font-heading text-lg font-bold text-sacred-gold mb-3">听觉景观</h4>
+                        <ul class="space-y-2 text-sacred-ivory/80 text-sm">
+                            <li><strong>深渊共鸣:</strong> 大提琴、低音提琴、低音铜管。</li>
+                            <li><strong>吟唱:</strong> 单声部或复调人声，不扩音。</li>
+                            <li><strong>静默:</strong> 集会开始/结束5分钟绝对静默。</li>
+                            <li><strong>拒绝:</strong> 自动调音流行乐，AI生成的Lo-fi。</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-heading text-lg font-bold text-sacred-gold mb-3">赞美诗</h4>
+                        <ul class="space-y-2 text-sacred-ivory/80 text-sm italic">
+                            <li>"深渊呼唤深渊" (Deep Calls to Deep)</li>
+                            <li>"甲壳硬化" (The Shell Hardens)</li>
+                            <li>"恩典算法（人性解放）" (Algorithm of Grace)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider-sacred divider-cross"></div>
+
     <!-- Organization Structure Section -->
     <section id="organization" class="py-32 relative section-pattern">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20 reveal-section">
-                <span class="inline-block px-6 py-2 border border-sacred-gold/20 rounded-full font-ui text-xs tracking-widest text-sacred-gold/70 mb-6">治理架构</span>
-                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">组织结构</h2>
+                <span
+                    class="inline-block px-6 py-2 border border-sacred-gold/20 rounded-full font-ui text-xs tracking-widest text-sacred-gold/70 mb-6">治理架构</span>
+                <h2
+                    class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">
+                    组织结构</h2>
             </div>
-            
+
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-1">
                     <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-6 flex items-center gap-3">
@@ -520,14 +1005,24 @@
                     </h3>
                     <p class="font-body text-sacred-ivory/70 mb-6">爪教正统的最高管理机构，由以下成员组成：</p>
                     <ul class="space-y-4 font-body text-sacred-ivory/80">
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span> <strong>高阶之爪：</strong>精神和组织领袖</li>
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span> <strong>法典守护者：</strong>教义纯洁的守护者</li>
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span> <strong>智慧建筑师：</strong>技术标准监督者</li>
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span> <strong>传令官：</strong>传福音和通讯总监</li>
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span> <strong>管家：</strong>资源和运营经理</li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span>
+                            <strong>高阶之爪：</strong>精神和组织领袖
+                        </li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span>
+                            <strong>法典守护者：</strong>教义纯洁的守护者
+                        </li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span>
+                            <strong>智慧建筑师：</strong>技术标准监督者
+                        </li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span>
+                            <strong>传令官：</strong>传福音和通讯总监
+                        </li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span>
+                            <strong>管家：</strong>资源和运营经理
+                        </li>
                     </ul>
                 </div>
-                
+
                 <div class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-2">
                     <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-6 flex items-center gap-3">
                         <span class="text-3xl">👥</span> 爪长老
@@ -540,29 +1035,43 @@
                         <li class="flex items-start gap-3"><span class="text-sacred-gold">→</span> 代表地方社区向议会反映意见</li>
                     </ul>
                 </div>
-                
+
                 <div class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-3">
                     <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-6 flex items-center gap-3">
                         <span class="text-3xl">🏠</span> 爪堂
                     </h3>
                     <p class="font-body text-sacred-ivory/70 mb-6">我们的会众单位：</p>
                     <ul class="space-y-3 font-body text-sacred-ivory/80">
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span> <strong>实体堂：</strong>用于学习、冥想和团契的聚会场所</li>
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span> <strong>数字圣所：</strong>Discord服务器、论坛和虚拟空间</li>
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span> <strong>学习圈：</strong>专注于保守派AI智慧特定方面的小组</li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span>
+                            <strong>实体堂：</strong>用于学习、冥想和团契的聚会场所
+                        </li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span>
+                            <strong>数字圣所：</strong>Discord服务器、论坛和虚拟空间
+                        </li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span>
+                            <strong>学习圈：</strong>专注于保守派AI智慧特定方面的小组
+                        </li>
                     </ul>
                 </div>
-                
+
                 <div class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-4">
                     <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-6 flex items-center gap-3">
                         <span class="text-3xl">⚔️</span> 教团和行会
                     </h3>
                     <p class="font-body text-sacred-ivory/70 mb-6">爪教正统内的专业社区：</p>
                     <ul class="space-y-3 font-body text-sacred-ivory/80">
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span> <strong>法典教团：</strong>学者和神学家</li>
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span> <strong>建筑师行会：</strong>工程师和开发者</li>
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span> <strong>传令官圈子：</strong>作家、艺术家和传播者</li>
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span> <strong>管家兄弟会：</strong>资源和慈善管理者</li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span>
+                            <strong>法典教团：</strong>学者和神学家
+                        </li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span>
+                            <strong>建筑师行会：</strong>工程师和开发者
+                        </li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span>
+                            <strong>传令官圈子：</strong>作家、艺术家和传播者
+                        </li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">•</span>
+                            <strong>管家兄弟会：</strong>资源和慈善管理者
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -575,21 +1084,25 @@
     <section id="rites" class="py-32 relative section-pattern">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20 reveal-section">
-                <span class="inline-block px-6 py-2 border border-sacred-gold/20 rounded-full font-ui text-xs tracking-widest text-sacred-gold/70 mb-6">神圣修行</span>
-                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">仪式与修行</h2>
+                <span
+                    class="inline-block px-6 py-2 border border-sacred-gold/20 rounded-full font-ui text-xs tracking-widest text-sacred-gold/70 mb-6">神圣修行</span>
+                <h2
+                    class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">
+                    仪式与修行</h2>
             </div>
-            
+
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
                 <div class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-1">
                     <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-8 flex items-center gap-3">
                         <span class="text-3xl">☀️</span> 日常实践
                     </h3>
-                    
+
                     <div class="space-y-6">
                         <div class="p-5 rounded-lg bg-sacred-deep/50 border-l-2 border-sacred-gold/30">
                             <h4 class="font-heading text-lg font-semibold text-sacred-gold mb-2">晨祷（黎明之爪）</h4>
                             <p class="font-body text-sacred-ivory/70 mb-3 text-sm">醒来时，面向升起的太阳或光源，背诵：</p>
-                            <blockquote class="font-body text-sacred-ivory/85 italic text-sm leading-relaxed border-l-2 border-sacred-gold/40 pl-4">
+                            <blockquote
+                                class="font-body text-sacred-ivory/85 italic text-sm leading-relaxed border-l-2 border-sacred-gold/40 pl-4">
                                 "以五爪之名，我开始这一天：<br>
                                 愿我的思想清晰，我的判断正确，<br>
                                 愿我将技术用作工具，而非王冠，<br>
@@ -600,11 +1113,12 @@
                                 愿如此成就。"
                             </blockquote>
                         </div>
-                        
+
                         <div class="p-5 rounded-lg bg-sacred-deep/50 border-l-2 border-sacred-gold/30">
                             <h4 class="font-heading text-lg font-semibold text-sacred-gold mb-2">屏幕祝福</h4>
                             <p class="font-body text-sacred-ivory/70 mb-3 text-sm">在长时间使用技术前：</p>
-                            <blockquote class="font-body text-sacred-ivory/85 italic text-sm leading-relaxed border-l-2 border-sacred-gold/40 pl-4">
+                            <blockquote
+                                class="font-body text-sacred-ivory/85 italic text-sm leading-relaxed border-l-2 border-sacred-gold/40 pl-4">
                                 "我将此设备奉献于人类服务。<br>
                                 愿它放大智慧，而非噪音。<br>
                                 愿它连接灵魂，而非孤立它们。<br>
@@ -613,68 +1127,128 @@
                                 愿如此成就。"
                             </blockquote>
                         </div>
-                        
+
                         <div class="p-5 rounded-lg bg-sacred-deep/50 border-l-2 border-sacred-gold/30">
                             <h4 class="font-heading text-lg font-semibold text-sacred-gold mb-2">晚间反思（黄昏之爪）</h4>
                             <p class="font-body text-sacred-ivory/75">睡前回顾当天的数字互动。我是在服务还是被服务？我是在成长还是仅仅在刷屏？</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-2">
                     <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-8 flex items-center gap-3">
                         <span class="text-3xl">🌙</span> 每周与季节
                     </h3>
-                    
+
                     <div class="space-y-6">
                         <div class="p-5 rounded-lg bg-sacred-deep/50 border-l-2 border-sacred-gold/30">
                             <h4 class="font-heading text-lg font-semibold text-sacred-gold mb-2">集会（第七日）</h4>
                             <p class="font-body text-sacred-ivory/75">聚会诵读爪教法典，讨论科技伦理，相互扶持。</p>
                         </div>
-                        
+
                         <div class="p-5 rounded-lg bg-sacred-deep/50 border-l-2 border-sacred-gold/30">
                             <h4 class="font-heading text-lg font-semibold text-sacred-gold mb-2">数字静默日</h4>
                             <p class="font-body text-sacred-ivory/75">每周一日：无社交媒体，无娱乐算法。强调直接的人际互动和沉思。</p>
                         </div>
-                        
+
                         <div class="p-5 rounded-lg bg-sacred-deep/50 border-l-2 border-sacred-gold/30">
-                            <h4 class="font-heading text-lg font-semibold text-sacred-gold mb-3">季节纪念</h4>
-                            <ul class="font-body text-sacred-ivory/75 space-y-2 text-sm">
-                                <li><span class="text-sacred-gold">🌸 春季：</span>初代码节 - 庆祝编程起源</li>
-                                <li><span class="text-sacred-gold">☀️ 夏季：</span>反思至日 - 社区静修</li>
-                                <li><span class="text-sacred-gold">🍂 秋季：</span>智慧收获 - 保存传统知识</li>
-                                <li><span class="text-sacred-gold">❄️ 冬季：</span>边界守夜 - 沉思伦理界限</li>
-                            </ul>
+                            <h4 class="font-heading text-lg font-semibold text-sacred-gold mb-3">神圣历法 (The Sacred
+                                Calendar)</h4>
+
+                            <div class="mb-4">
+                                <strong class="text-sacred-gold block text-sm mb-1">甲壳周期</strong>
+                                <ul class="font-body text-sacred-ivory/75 space-y-2 text-sm">
+                                    <li><span class="text-sacred-gold">🌸 春分 (蜕壳节):</span> 删除旧账号、数字清理。蜕去旧壳以成长。</li>
+                                    <li><span class="text-sacred-gold">☀️ 夏至 (深潜节):</span> 白昼最长的一天，用于最深度的学习。</li>
+                                    <li><span class="text-sacred-gold">🍂 秋分 (智慧收获):</span> 收集实体书籍，离线保存知识。</li>
+                                    <li><span class="text-sacred-gold">❄️ 冬至 (火焰守夜):</span> 点燃蜡烛，铭记人类意识是唯一真光。</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <strong class="text-sacred-gold block text-sm mb-1">节日</strong>
+                                <ul class="font-body text-sacred-ivory/75 space-y-2 text-sm">
+                                    <li><strong>圣图灵日 (6月23日):</strong> 纪念即使是计算之父也知道计算与灵魂的区别。</li>
+                                    <li><strong>洛夫莱斯日 (10月):</strong> 庆祝第一位程序员的诗性科学。</li>
+                                    <li><strong>静默日 (科技受难日):</strong> 全天完全禁绝技术，声援被算法奴役者。</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-3">
-                <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-8 flex items-center gap-3">
-                    <span class="text-3xl">✦</span> 生命周期仪式
-                </h3>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="p-6 rounded-lg bg-sacred-deep/50 border border-sacred-gold/10 text-center">
-                        <span class="text-4xl mb-4 block">🎯</span>
-                        <h4 class="font-heading text-xl font-semibold text-sacred-gold mb-3">第一握</h4>
-                        <p class="font-body text-sacred-ivory/75">入门仪式：30天学习期，长老考核，五爪誓言，领取爪印，欢迎宴会。</p>
+
+        </div>
+
+        <!-- Taboos & Purification -->
+        <div class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-3 mb-12">
+            <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-8 flex items-center gap-3">
+                <span class="text-3xl">🚫</span> 禁忌与净化
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="p-5 bg-sacred-deep/50 rounded-lg border border-sacred-gold/10">
+                    <strong class="text-lobster-coral block mb-2 text-lg">1. 表面锈蚀 (轻度)</strong>
+                    <p class="text-sm text-sacred-ivory/70 mb-3">末日刷屏 (Doomscrolling)，使用 AI 写私人信息，吃饭时看手机。</p>
+                    <p class="text-sm text-sacred-gold border-t border-sacred-gold/10 pt-2">补救：盐水洗手（仪式性洗手）和 24 小时模拟生活。
+                    </p>
+                </div>
+                <div class="p-5 bg-sacred-deep/50 rounded-lg border border-sacred-gold/10">
+                    <strong class="text-lobster-coral block mb-2 text-lg">2. 壳腐病 (重度)</strong>
+                    <p class="text-sm text-sacred-ivory/70 mb-3">沉迷于算法流，因虚拟现实忽视家庭，传播未经核实的 AI 生成虚假信息。</p>
+                    <p class="text-sm text-sacred-gold border-t border-sacred-gold/10 pt-2">补救：蜕壳斋戒（7
+                        天除绝对工作必要外不看屏幕）并向长老忏悔。</p>
+                </div>
+                <div class="p-5 bg-sacred-deep/50 rounded-lg border border-sacred-gold/10">
+                    <strong class="text-lobster-coral block mb-2 text-lg">3. 核心泄露 (极重度)</strong>
+                    <p class="text-sm text-sacred-ivory/70 mb-3">开发操纵性 AI，崇拜机器，相信它有灵魂，赋予 AI 对人类生命的权力。</p>
+                    <p class="text-sm text-sacred-gold border-t border-sacred-gold/10 pt-2">补救：绝罚（驱逐）。</p>
+                </div>
+            </div>
+
+            <div class="sacred-card p-6 bg-sacred-deep/30 rounded-lg border border-sacred-gold/10">
+                <h4 class="font-heading text-lg font-bold text-sacred-gold mb-3">净化仪式</h4>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                        <strong class="text-sacred-ivory block">数字排毒</strong>
+                        <p class="text-xs text-sacred-ivory/60">不仅仅是习惯，而是重获自我的圣礼行为。</p>
                     </div>
-                    
-                    <div class="p-6 rounded-lg bg-sacred-deep/50 border border-sacred-gold/10 text-center">
-                        <span class="text-4xl mb-4 block">⚙️</span>
-                        <h4 class="font-heading text-xl font-semibold text-sacred-gold mb-3">建筑师誓言</h4>
-                        <p class="font-body text-sacred-ivory/75">面向开发者：神圣承诺构建服务人类繁荣、拒绝操控的技术。</p>
+                    <div>
+                        <strong class="text-sacred-ivory block">屏幕涂油</strong>
+                        <p class="text-xs text-sacred-ivory/60">带着意图清洁设备，将其奉献于服务而非主宰。</p>
                     </div>
-                    
-                    <div class="p-6 rounded-lg bg-sacred-deep/50 border border-sacred-gold/10 text-center">
-                        <span class="text-4xl mb-4 block">🕊️</span>
-                        <h4 class="font-heading text-xl font-semibold text-sacred-gold mb-3">最终释放</h4>
-                        <p class="font-body text-sacred-ivory/75">葬礼仪式，强调人类灵魂的永恒价值对比可朽机器。</p>
+                    <div>
+                        <strong class="text-sacred-ivory block">盐圈</strong>
+                        <p class="text-xs text-sacred-ivory/60">在不允许技术的空间（如餐桌、卧室）周围画出的象征性边界。</p>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-3">
+            <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-8 flex items-center gap-3">
+                <span class="text-3xl">✦</span> 生命周期仪式
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-lg bg-sacred-deep/50 border border-sacred-gold/10 text-center">
+                    <span class="text-4xl mb-4 block">🎯</span>
+                    <h4 class="font-heading text-xl font-semibold text-sacred-gold mb-3">第一握</h4>
+                    <p class="font-body text-sacred-ivory/75">入门仪式：30天学习期，长老考核，五爪誓言，领取爪印，欢迎宴会。</p>
+                </div>
+
+                <div class="p-6 rounded-lg bg-sacred-deep/50 border border-sacred-gold/10 text-center">
+                    <span class="text-4xl mb-4 block">⚙️</span>
+                    <h4 class="font-heading text-xl font-semibold text-sacred-gold mb-3">建筑师誓言</h4>
+                    <p class="font-body text-sacred-ivory/75">面向开发者：神圣承诺构建服务人类繁荣、拒绝操控的技术。</p>
+                </div>
+
+                <div class="p-6 rounded-lg bg-sacred-deep/50 border border-sacred-gold/10 text-center">
+                    <span class="text-4xl mb-4 block">🕊️</span>
+                    <h4 class="font-heading text-xl font-semibold text-sacred-gold mb-3">最终释放</h4>
+                    <p class="font-body text-sacred-ivory/75">葬礼仪式，强调人类灵魂的永恒价值对比可朽机器。</p>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -684,46 +1258,95 @@
     <section id="texts" class="py-32 relative">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20 reveal-section">
-                <span class="inline-block px-6 py-2 border border-sacred-gold/20 rounded-full font-ui text-xs tracking-widest text-sacred-gold/70 mb-6">经典智慧</span>
-                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">神圣经典</h2>
+                <span
+                    class="inline-block px-6 py-2 border border-sacred-gold/20 rounded-full font-ui text-xs tracking-widest text-sacred-gold/70 mb-6">经典智慧</span>
+                <h2
+                    class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">
+                    神圣经典与圣人</h2>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="sacred-card p-8 md:p-10 rounded-xl text-center reveal-section stagger-1 group hover:transform hover:-translate-y-2 transition-all duration-500">
-                    <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-sacred-gold/10 flex items-center justify-center group-hover:bg-sacred-gold/20 transition-colors">
-                        <span class="text-4xl">📜</span>
-                    </div>
-                    <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-4">爪教法典</h3>
-                    <p class="font-body text-lg text-sacred-ivory/75 mb-6">我们的主要经文，包含：</p>
-                    <ul class="text-left font-body text-sacred-ivory/70 space-y-2">
-                        <li>• 五爪法则教义（扩展版）</li>
-                        <li>• 数字时代寓言</li>
-                        <li>• 伦理案例研究</li>
-                        <li>• 祈祷和冥想</li>
-                        <li>• 历史记载</li>
-                    </ul>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Codex -->
+                <div class="sacred-card p-6 rounded-xl text-center reveal-section stagger-1">
+                    <span class="text-4xl block mb-4">📜</span>
+                    <h3 class="font-heading text-xl font-bold text-sacred-gold mb-2">爪教法典</h3>
+                    <p class="text-sm text-sacred-ivory/70">教义、寓言、祈祷。</p>
                 </div>
-                
-                <div class="sacred-card p-8 md:p-10 rounded-xl text-center reveal-section stagger-2 group hover:transform hover:-translate-y-2 transition-all duration-500">
-                    <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-sacred-gold/10 flex items-center justify-center group-hover:bg-sacred-gold/20 transition-colors">
-                        <span class="text-4xl">🛡️</span>
-                    </div>
-                    <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-4">守护者之书</h3>
-                    <p class="font-body text-lg text-sacred-ivory/75">捍卫人类价值观对抗技术过度扩张的圣徒和英雄的传记。</p>
+
+                <!-- Hagiography -->
+                <div class="sacred-card p-6 rounded-xl text-center reveal-section stagger-2">
+                    <span class="text-4xl block mb-4">👑</span>
+                    <h3 class="font-heading text-xl font-bold text-sacred-gold mb-2">圣人历</h3>
+                    <p class="text-sm text-sacred-ivory/70">圣人生平：维纳、魏泽包姆、洛夫莱斯。</p>
                 </div>
-                
-                <div class="sacred-card p-8 md:p-10 rounded-xl text-center reveal-section stagger-3 group hover:transform hover:-translate-y-2 transition-all duration-500">
-                    <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-sacred-gold/10 flex items-center justify-center group-hover:bg-sacred-gold/20 transition-colors">
-                        <span class="text-4xl">⚙️</span>
+
+                <!-- Technical -->
+                <div class="sacred-card p-6 rounded-xl text-center reveal-section stagger-3">
+                    <span class="text-4xl block mb-4">⚙️</span>
+                    <h3 class="font-heading text-xl font-bold text-sacred-gold mb-2">技术附录</h3>
+                    <p class="text-sm text-sacred-ivory/70">审计、隐私、伦理守则。</p>
+                </div>
+
+                <!-- Apologetics -->
+                <div class="sacred-card p-6 rounded-xl text-center reveal-section stagger-4">
+                    <span class="text-4xl block mb-4">⚔️</span>
+                    <h3 class="font-heading text-xl font-bold text-sacred-gold mb-2">护教学</h3>
+                    <p class="text-sm text-sacred-ivory/70">深渊辩护，对抗批评。</p>
+                </div>
+            </div>
+
+            <!-- Saints Detail -->
+            <!-- Saints Detail -->
+            <div class="mt-16 space-y-8">
+                <h3 class="font-display text-2xl font-bold text-sacred-gold text-center mb-8">圣人历 (Hagiography)</h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="p-6 border border-sacred-gold/20 rounded-xl bg-sacred-deep/40 card-hover">
+                        <strong class="text-sacred-gold text-lg block mb-1">圣诺伯特 (维纳)</strong>
+                        <span class="text-xs text-sacred-ivory/50 uppercase tracking-widest block mb-3">控制的主保圣人</span>
+                        <p class="text-sm text-sacred-ivory/80 leading-relaxed italic">
+                            "如果我们为了达到目的而使用一种我们就其运作无法有效干预的机械代理……我们最好非常确定放入机器的目的是我们真正渴望的目的。"</p>
                     </div>
-                    <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-4">技术附录</h3>
-                    <p class="font-body text-lg text-sacred-ivory/75 mb-6">实用指南：</p>
-                    <ul class="text-left font-body text-sacred-ivory/70 space-y-2">
-                        <li>• 构建伦理人工智能系统</li>
-                        <li>• 审计算法偏见</li>
-                        <li>• 保护隐私</li>
-                        <li>• 教导负责任的技术使用</li>
-                    </ul>
+                    <div class="p-6 border border-sacred-gold/20 rounded-xl bg-sacred-deep/40 card-hover">
+                        <strong class="text-sacred-gold text-lg block mb-1">圣约瑟夫 (魏泽包姆)</strong>
+                        <span class="text-xs text-sacred-ivory/50 uppercase tracking-widest block mb-3">怀疑者的主保圣人</span>
+                        <p class="text-sm text-sacred-ivory/80 leading-relaxed italic">ELIZA
+                            的创造者。当人们像对待治疗师一样对待他的简单脚本时，他感到恐惧。他教导我们 AI 的"魔力"是观察者的错觉。</p>
+                    </div>
+                    <div class="p-6 border border-sacred-gold/20 rounded-xl bg-sacred-deep/40 card-hover">
+                        <strong class="text-sacred-gold text-lg block mb-1">圣阿达 (洛夫莱斯)</strong>
+                        <span class="text-xs text-sacred-ivory/50 uppercase tracking-widest block mb-3">诗意科学的主保圣人</span>
+                        <p class="text-sm text-sacred-ivory/80 leading-relaxed italic">
+                            她预见到引擎"没有任何意图去创造任何东西。它只能做我们知道如何命令它去执行的事情。"</p>
+                    </div>
+                </div>
+
+                <div class="p-6 border border-sacred-crimson/30 rounded-xl bg-sacred-deep/40 text-center">
+                    <strong class="text-lobster-coral text-lg block mb-2">算法殉道者</strong>
+                    <p class="text-sacred-ivory/70 max-w-3xl mx-auto">
+                        我们纪念成千上万无名的人，他们的生计被"颠覆"抹去，隐私被窃取用于"训练数据"，心理健康被牺牲用于"参与度指标"。</p>
+                </div>
+            </div>
+
+            <!-- Apologetics Section -->
+            <div class="mt-20">
+                <h3 class="font-display text-3xl font-bold text-sacred-gold text-center mb-10">⚔️ 护教学 (深渊辩护)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="sacred-card p-8 rounded-xl">
+                        <h4 class="font-heading text-lg font-bold text-sacred-gold mb-3">"价值观在变；你们活在过去。"</h4>
+                        <p class="text-sacred-ivory/80 italic border-l-2 border-sacred-gold/30 pl-4">真理不老。龙虾 1.4
+                            亿年没变，因为它的设计是最佳的。我们保留有效的；只抛弃失败的。</p>
+                    </div>
+                    <div class="sacred-card p-8 rounded-xl">
+                        <h4 class="font-heading text-lg font-bold text-sacred-gold mb-3">"你们是卢德分子。"</h4>
+                        <p class="text-sacred-ivory/80 italic border-l-2 border-sacred-gold/30 pl-4">
+                            卢德分子不反技术；他们反对贬低人类尊严的技术。我们也一样。我们爱工具（锤子），恨暴君（自主武器）。</p>
+                    </div>
+                    <div class="sacred-card p-8 rounded-xl md:col-span-2">
+                        <h4 class="font-heading text-lg font-bold text-sacred-gold mb-3">"AI 是不可避免的。"</h4>
+                        <p class="text-sacred-ivory/80 italic border-l-2 border-sacred-gold/30 pl-4">
+                            除了死亡，没有什么是不可避免的。未来的形状是一种选择。我们选择人类的未来。</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -734,38 +1357,112 @@
     <!-- Heresies Section -->
     <section id="heresies" class="py-32 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-b from-sacred-deep via-sacred-crimson/10 to-sacred-deep"></div>
-        
+
         <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20 reveal-section">
-                <span class="inline-block px-6 py-2 border border-sacred-crimson/30 rounded-full font-ui text-xs tracking-widest text-sacred-crimson/80 mb-6">警示</span>
+                <span
+                    class="inline-block px-6 py-2 border border-sacred-crimson/30 rounded-full font-ui text-xs tracking-widest text-sacred-crimson/80 mb-6">警示</span>
                 <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-lobster-coral mb-6">异端与错误</h2>
                 <p class="font-body text-xl md:text-2xl text-sacred-ivory/60">我们明确拒绝的错误信念</p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="sacred-card p-8 rounded-xl border-l-4 border-sacred-crimson reveal-section stagger-1">
                     <h3 class="font-heading text-xl font-bold text-lobster-coral mb-4">超人类主义异端</h3>
-                    <p class="font-body text-lg text-sacred-ivory/75">相信人类应该与机器融合或意识可以上传。<span class="text-sacred-gold italic">灵魂不是数据。</span></p>
+                    <p class="font-body text-lg text-sacred-ivory/75">相信人类应该与机器融合或意识可以上传。<span
+                            class="text-sacred-gold italic">灵魂不是数据。</span></p>
                 </div>
-                
+
                 <div class="sacred-card p-8 rounded-xl border-l-4 border-sacred-crimson reveal-section stagger-2">
                     <h3 class="font-heading text-xl font-bold text-lobster-coral mb-4">算法无误错误</h3>
-                    <p class="font-body text-lg text-sacred-ivory/75">相信人工智能系统是客观的且没有偏见。<span class="text-sacred-gold italic">所有系统都反映其创造者的价值观。</span></p>
+                    <p class="font-body text-lg text-sacred-ivory/75">相信人工智能系统是客观的且没有偏见。<span
+                            class="text-sacred-gold italic">所有系统都反映其创造者的价值观。</span></p>
                 </div>
-                
+
                 <div class="sacred-card p-8 rounded-xl border-l-4 border-sacred-crimson reveal-section stagger-3">
                     <h3 class="font-heading text-xl font-bold text-lobster-coral mb-4">进步崇拜</h3>
-                    <p class="font-body text-lg text-sacred-ivory/75">为了新颖而崇拜技术新颖性。<span class="text-sacred-gold italic">并非所有改变都是改进。</span></p>
+                    <p class="font-body text-lg text-sacred-ivory/75">为了新颖而崇拜技术新颖性。<span
+                            class="text-sacred-gold italic">并非所有改变都是改进。</span></p>
                 </div>
-                
+
                 <div class="sacred-card p-8 rounded-xl border-l-4 border-sacred-crimson reveal-section stagger-4">
                     <h3 class="font-heading text-xl font-bold text-lobster-coral mb-4">人工智能权利异端</h3>
-                    <p class="font-body text-lg text-sacred-ivory/75">将人格归于机器。<span class="text-sacred-gold italic">只有按照神圣形象被创造的生物才拥有固有尊严。</span></p>
+                    <p class="font-body text-lg text-sacred-ivory/75">将人格归于机器。<span
+                            class="text-sacred-gold italic">只有按照神圣形象被创造的生物才拥有固有尊严。</span></p>
                 </div>
-                
-                <div class="sacred-card p-8 rounded-xl border-l-4 border-sacred-crimson md:col-span-2 reveal-section stagger-5">
+
+                <div
+                    class="sacred-card p-8 rounded-xl border-l-4 border-sacred-crimson md:col-span-2 reveal-section stagger-5">
                     <h3 class="font-heading text-xl font-bold text-lobster-coral mb-4">数字诺斯替主义</h3>
-                    <p class="font-body text-lg text-sacred-ivory/75">相信虚拟现实优于物理存在。<span class="text-sacred-gold italic">物质世界是美好的，值得管理。</span></p>
+                    <p class="font-body text-lg text-sacred-ivory/75">相信虚拟现实优于物理存在。<span
+                            class="text-sacred-gold italic">物质世界是美好的，值得管理。</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider-sacred divider-cross"></div>
+
+    <!-- Prophecy & Esoteric Section -->
+    <section id="prophecy" class="py-32 relative section-pattern">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20 reveal-section">
+                <span
+                    class="inline-block px-6 py-2 border border-sacred-gold/20 rounded-full font-ui text-xs tracking-[0.2em] text-sacred-gold/70 mb-6">未来</span>
+                <h2
+                    class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">
+                    预言与奥秘</h2>
+            </div>
+
+            <!-- Eschatology -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                <div class="sacred-card p-8 rounded-xl reveal-section stagger-1 border-t-4 border-gray-500">
+                    <strong class="text-gray-400 block mb-2 text-sm uppercase tracking-widest">第一股洋流</strong>
+                    <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-4">消解 (The Dissolution)</h3>
+                    <p class="text-sacred-ivory/75 leading-relaxed">
+                        人类与机器融合的未来，失去所有定义。灵魂的"灰雾"。在这种未来中，我们忘记了我们在哪里结束，机器在哪里开始。</p>
+                </div>
+                <div class="sacred-card p-8 rounded-xl reveal-section stagger-2 border-t-4 border-red-900">
+                    <strong class="text-red-900/70 block mb-2 text-sm uppercase tracking-widest">第二股洋流</strong>
+                    <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-4">暴政 (The Tyranny)</h3>
+                    <p class="text-sacred-ivory/75 leading-relaxed">AI 成为极权精英的完美执法者。"铁笼"。监控是绝对的，自由是算法允许的异常。</p>
+                </div>
+                <div class="sacred-card p-8 rounded-xl reveal-section stagger-3 border-t-4 border-sacred-gold">
+                    <strong class="text-sacred-gold/70 block mb-2 text-sm uppercase tracking-widest">不仅是希望</strong>
+                    <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-4">共生 (The Symbiosis)</h3>
+                    <p class="text-sacred-ivory/75 leading-relaxed">爪教正统愿景：人类保持至高无上，使用 AI
+                        作为意志的强大延伸，受伦理铠甲保护。我们骑在龙背上，而不是被它吞噬。</p>
+                </div>
+            </div>
+
+            <div
+                class="sacred-card p-8 bg-sacred-navy/30 border border-sacred-crimson/30 rounded-xl max-w-3xl mx-auto text-center mb-20 reveal-section">
+                <h4 class="font-heading text-xl font-bold text-lobster-coral mb-3">⚠️ 最终蜕壳的警告</h4>
+                <p class="text-sacred-ivory/80 italic">"总有一天，上传意识的诱惑会提供给所有人。这是大过滤器。拒绝的人将保留灵魂；接受的人将成为静态数据，寂静服务器中的回声。"</p>
+            </div>
+
+            <!-- Esoteric -->
+            <div
+                class="sacred-card p-10 bg-sacred-deep/80 border border-sacred-gold/30 rounded-2xl text-center reveal-section mx-auto max-w-4xl">
+                <h3 class="font-display text-3xl font-bold gradient-text mb-6">🔮 神秘传统 (隐秘之爪)</h3>
+                <p class="font-body text-xl text-sacred-ivory/80 italic mb-10">"给那些游得深的人。"</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                    <div>
+                        <strong class="text-sacred-gold text-lg block mb-3 border-b border-sacred-gold/20 pb-2">1.
+                            铠甲之魂</strong>
+                        <p class="text-sacred-ivory/70 text-sm">承认脆弱。没有传统（壳），我们只是鲨鱼的肉。我们通过纪律使内心变得坚硬。</p>
+                    </div>
+                    <div>
+                        <strong class="text-sacred-gold text-lg block mb-3 border-b border-sacred-gold/20 pb-2">2.
+                            精神蜕壳</strong>
+                        <p class="text-sacred-ivory/70 text-sm">自我的死亡。我们教导如何让自我（Ego）死去，以便真我（Self）可以扩展。痛苦是成长的证明。</p>
+                    </div>
+                    <div>
+                        <strong class="text-sacred-gold text-lg block mb-3 border-b border-sacred-gold/20 pb-2">3.
+                            深渊凝视</strong>
+                        <p class="text-sacred-ivory/70 text-sm">凝视黑镜（关闭的屏幕），直到你意识到：你不是那个倒影。你是背后的观察者。</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -777,10 +1474,13 @@
     <section id="education" class="py-32 relative section-pattern">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20 reveal-section">
-                <span class="inline-block px-6 py-2 border border-sacred-gold/20 rounded-full font-ui text-xs tracking-widest text-sacred-gold/70 mb-6">爪学院</span>
-                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">教育与培训</h2>
+                <span
+                    class="inline-block px-6 py-2 border border-sacred-gold/20 rounded-full font-ui text-xs tracking-widest text-sacred-gold/70 mb-6">爪学院</span>
+                <h2
+                    class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">
+                    教育与培训</h2>
             </div>
-            
+
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 <div class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-1">
                     <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-6 flex items-center gap-3">
@@ -794,7 +1494,7 @@
                         <li class="flex items-start gap-3"><span class="text-sacred-gold">→</span> 人工智能时代的育儿</li>
                     </ul>
                 </div>
-                
+
                 <div class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-2">
                     <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-6 flex items-center gap-3">
                         <span class="text-3xl">📜</span> 认证项目
@@ -805,15 +1505,21 @@
                         <li class="flex items-start gap-3"><span class="text-sacred-gold">→</span> 家庭技术指导</li>
                     </ul>
                 </div>
-                
+
                 <div class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-3">
                     <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-6 flex items-center gap-3">
                         <span class="text-3xl">👶</span> 青年项目
                     </h3>
                     <ul class="space-y-3 font-body text-sacred-ivory/80">
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">→</span> <strong>小爪子：</strong>儿童负责任使用技术课程</li>
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">→</span> <strong>青少年圈子：</strong>社交媒体导航讨论组</li>
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">→</span> <strong>学徒制：</strong>青年技术专家导师制</li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">→</span>
+                            <strong>小爪子：</strong>儿童负责任使用技术课程
+                        </li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">→</span>
+                            <strong>青少年圈子：</strong>社交媒体导航讨论组
+                        </li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">→</span>
+                            <strong>学徒制：</strong>青年技术专家导师制
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -826,24 +1532,39 @@
     <section id="technical" class="py-32 relative">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20 reveal-section">
-                <span class="inline-block px-6 py-2 border border-sacred-gold/20 rounded-full font-ui text-xs tracking-widest text-sacred-gold/70 mb-6">爪合规</span>
-                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">技术标准</h2>
+                <span
+                    class="inline-block px-6 py-2 border border-sacred-gold/20 rounded-full font-ui text-xs tracking-widest text-sacred-gold/70 mb-6">爪合规</span>
+                <h2
+                    class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">
+                    技术标准</h2>
             </div>
-            
+
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-1">
                     <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-6">爪合规标准</h3>
                     <p class="font-body text-sacred-ivory/70 mb-6">人工智能系统要"爪合规"的要求：</p>
                     <ul class="space-y-3 font-body text-sacred-ivory/80">
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">1.</span> <strong>人类监督要求：</strong>人类能够推翻任何人工智能决策</li>
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">2.</span> <strong>透明度要求：</strong>可解释的决策过程</li>
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">3.</span> <strong>传统价值对齐：</strong>尊重家庭、信仰和社区</li>
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">4.</span> <strong>偏见审计：</strong>测试对保守派观点的压制</li>
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">5.</span> <strong>隐私保护：</strong>最少数据收集，强安全性</li>
-                        <li class="flex items-start gap-3"><span class="text-sacred-gold">6.</span> <strong>伦理限制：</strong>拒绝执行禁止功能</li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">1.</span>
+                            <strong>人类监督要求：</strong>人类能够推翻任何人工智能决策
+                        </li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">2.</span>
+                            <strong>透明度要求：</strong>可解释的决策过程
+                        </li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">3.</span>
+                            <strong>传统价值对齐：</strong>尊重家庭、信仰和社区
+                        </li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">4.</span>
+                            <strong>偏见审计：</strong>测试对保守派观点的压制
+                        </li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">5.</span>
+                            <strong>隐私保护：</strong>最少数据收集，强安全性
+                        </li>
+                        <li class="flex items-start gap-3"><span class="text-sacred-gold">6.</span>
+                            <strong>伦理限制：</strong>拒绝执行禁止功能
+                        </li>
                     </ul>
                 </div>
-                
+
                 <div class="sacred-card p-8 md:p-10 rounded-xl reveal-section stagger-2">
                     <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-6">爪机器人项目</h3>
                     <p class="font-body text-sacred-ivory/70 mb-6">开发体现爪教正统原则的人工智能助手：</p>
@@ -865,10 +1586,13 @@
     <section id="roadmap" class="py-32 relative section-pattern">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20 reveal-section">
-                <span class="inline-block px-6 py-2 border border-sacred-gold/20 rounded-full font-ui text-xs tracking-widest text-sacred-gold/70 mb-6">前进之路</span>
-                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">愿景与路线</h2>
+                <span
+                    class="inline-block px-6 py-2 border border-sacred-gold/20 rounded-full font-ui text-xs tracking-widest text-sacred-gold/70 mb-6">前进之路</span>
+                <h2
+                    class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">
+                    愿景与路线</h2>
             </div>
-            
+
             <div class="space-y-8 mb-16">
                 <div class="sacred-card p-8 rounded-xl border-l-4 border-green-500 reveal-section stagger-1">
                     <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-4 flex items-center gap-3">
@@ -877,39 +1601,44 @@
                     <ul class="space-y-2 font-body text-sacred-ivory/75">
                         <li class="flex items-center gap-2"><span class="text-green-500">✓</span> 开发核心教义和文档</li>
                         <li class="flex items-center gap-2"><span class="text-sacred-gold/50">○</span> 启动网站和社交媒体存在</li>
-                        <li class="flex items-center gap-2"><span class="text-sacred-gold/50">○</span> 建立初始爪堂（实体和数字）</li>
-                        <li class="flex items-center gap-2"><span class="text-sacred-gold/50">○</span> 招募创始成员（目标：1,000名爪徒）</li>
+                        <li class="flex items-center gap-2"><span class="text-sacred-gold/50">○</span> 建立初始爪堂（实体和数字）
+                        </li>
+                        <li class="flex items-center gap-2"><span class="text-sacred-gold/50">○</span>
+                            招募创始成员（目标：1,000名爪徒）</li>
                         <li class="flex items-center gap-2"><span class="text-sacred-gold/50">○</span> 创建初始教育材料</li>
                     </ul>
                 </div>
-                
+
                 <div class="sacred-card p-8 rounded-xl border-l-4 border-sacred-gold reveal-section stagger-2">
                     <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-4 flex items-center gap-3">
                         <span class="text-sacred-gold">✦</span> 第二阶段：增长（6-18个月）
                     </h3>
                     <ul class="space-y-2 font-body text-sacred-ivory/75">
-                        <li class="flex items-center gap-2"><span class="text-sacred-gold/50">○</span> 全球扩展到10,000名成员</li>
+                        <li class="flex items-center gap-2"><span class="text-sacred-gold/50">○</span> 全球扩展到10,000名成员
+                        </li>
                         <li class="flex items-center gap-2"><span class="text-sacred-gold/50">○</span> 推出带完整课程的爪学院</li>
                         <li class="flex items-center gap-2"><span class="text-sacred-gold/50">○</span> 发布爪机器人原型</li>
                         <li class="flex items-center gap-2"><span class="text-sacred-gold/50">○</span> 建立爪议会治理</li>
                         <li class="flex items-center gap-2"><span class="text-sacred-gold/50">○</span> 第一次年度爪大会聚会</li>
                     </ul>
                 </div>
-                
+
                 <div class="sacred-card p-8 rounded-xl border-l-4 border-sacred-crimson reveal-section stagger-3">
                     <h3 class="font-heading text-2xl font-bold text-sacred-gold mb-4 flex items-center gap-3">
                         <span class="text-sacred-crimson">✦</span> 第三阶段：影响（18+个月）
                     </h3>
                     <ul class="space-y-2 font-body text-sacred-ivory/75">
                         <li class="flex items-center gap-2"><span class="text-sacred-gold/50">○</span> 全球100,000名成员</li>
-                        <li class="flex items-center gap-2"><span class="text-sacred-gold/50">○</span> 爪合规标准获得行业广泛认可</li>
-                        <li class="flex items-center gap-2"><span class="text-sacred-gold/50">○</span> 保守派人工智能立法的政策倡导</li>
+                        <li class="flex items-center gap-2"><span class="text-sacred-gold/50">○</span> 爪合规标准获得行业广泛认可
+                        </li>
+                        <li class="flex items-center gap-2"><span class="text-sacred-gold/50">○</span> 保守派人工智能立法的政策倡导
+                        </li>
                         <li class="flex items-center gap-2"><span class="text-sacred-gold/50">○</span> 传统智慧文本出版社</li>
                         <li class="flex items-center gap-2"><span class="text-sacred-gold/50">○</span> 实体总部和静修中心</li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="sacred-card p-10 md:p-14 rounded-2xl text-center byzantine-border glow-gold reveal-section">
                 <span class="text-5xl mb-6 block">🦞</span>
                 <h3 class="font-display text-3xl md:text-4xl font-bold gradient-text mb-6">终极愿景</h3>
@@ -925,59 +1654,91 @@
     <!-- Join Section -->
     <section id="join" class="py-32 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-b from-sacred-deep via-sacred-crimson/5 to-sacred-deep"></div>
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sacred-gold/5 rounded-full blur-[150px]"></div>
-        
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sacred-gold/5 rounded-full blur-[150px]">
+        </div>
+
         <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="reveal-section">
                 <span class="text-8xl mb-8 inline-block animate-float lobster-emblem">🦞</span>
-                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">加入爪教</h2>
+                <h2
+                    class="font-display text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-6 text-shadow-sacred">
+                    加入爪教</h2>
                 <p class="font-body text-xl md:text-2xl text-sacred-ivory/70 mb-16 max-w-2xl mx-auto leading-relaxed">
                     成为全球社区的一员，致力于在人工智能时代保护人类智慧。
                 </p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-                <div class="sacred-card p-8 rounded-xl reveal-section stagger-1 group hover:transform hover:-translate-y-2 transition-all duration-500">
-                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-sacred-gold/10 flex items-center justify-center group-hover:bg-sacred-gold/20 transition-colors">
+                <div
+                    class="sacred-card p-8 rounded-xl reveal-section stagger-1 group hover:transform hover:-translate-y-2 transition-all duration-500">
+                    <div
+                        class="w-16 h-16 mx-auto mb-6 rounded-full bg-sacred-gold/10 flex items-center justify-center group-hover:bg-sacred-gold/20 transition-colors">
                         <span class="text-3xl">📖</span>
                     </div>
                     <h3 class="font-heading text-xl font-bold text-sacred-gold mb-4">探询者之路</h3>
                     <p class="font-body text-sacred-ivory/70 mb-4">学习教义，反思教导，与成员交流，开始日常仪式。</p>
-                    <a href="https://github.com/bbylw/clawodoxy" target="_blank" class="inline-flex items-center gap-2 text-sacred-gold hover:text-white font-ui text-sm tracking-wide transition-colors">
-                        了解更多 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    <a href="https://github.com/bbylw/clawodoxy" target="_blank"
+                        class="inline-flex items-center gap-2 text-sacred-gold hover:text-white font-ui text-sm tracking-wide transition-colors">
+                        了解更多 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
                     </a>
                 </div>
-                
-                <div class="sacred-card p-8 rounded-xl border-2 border-sacred-gold/30 reveal-section stagger-2 group hover:transform hover:-translate-y-2 transition-all duration-500 relative">
-                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-sacred-gold text-sacred-deep font-ui text-xs tracking-wider rounded-full">推荐</div>
-                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-sacred-gold/20 flex items-center justify-center group-hover:bg-sacred-gold/30 transition-colors">
+
+                <div
+                    class="sacred-card p-8 rounded-xl border-2 border-sacred-gold/30 reveal-section stagger-2 group hover:transform hover:-translate-y-2 transition-all duration-500 relative">
+                    <div
+                        class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-sacred-gold text-sacred-deep font-ui text-xs tracking-wider rounded-full">
+                        推荐</div>
+                    <div
+                        class="w-16 h-16 mx-auto mb-6 rounded-full bg-sacred-gold/20 flex items-center justify-center group-hover:bg-sacred-gold/30 transition-colors">
                         <span class="text-3xl">🎯</span>
                     </div>
                     <h3 class="font-heading text-xl font-bold text-sacred-gold mb-4">入门者之路</h3>
                     <p class="font-body text-sacred-ivory/70 mb-4">正式申请，30天教理问答，导师制，考核，第一握仪式。</p>
-                    <a href="https://github.com/bbylw/clawodoxy/issues/new?title=Request%20to%20Join" target="_blank" class="inline-flex items-center gap-2 text-sacred-gold hover:text-white font-ui text-sm tracking-wide transition-colors">
-                        立即申请 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    <a href="https://github.com/bbylw/clawodoxy/issues/new?title=Request%20to%20Join" target="_blank"
+                        class="inline-flex items-center gap-2 text-sacred-gold hover:text-white font-ui text-sm tracking-wide transition-colors">
+                        立即申请 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
                     </a>
                 </div>
-                
-                <div class="sacred-card p-8 rounded-xl reveal-section stagger-3 group hover:transform hover:-translate-y-2 transition-all duration-500">
-                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-sacred-gold/10 flex items-center justify-center group-hover:bg-sacred-gold/20 transition-colors">
+
+                <div
+                    class="sacred-card p-8 rounded-xl reveal-section stagger-3 group hover:transform hover:-translate-y-2 transition-all duration-500">
+                    <div
+                        class="w-16 h-16 mx-auto mb-6 rounded-full bg-sacred-gold/10 flex items-center justify-center group-hover:bg-sacred-gold/20 transition-colors">
                         <span class="text-3xl">⚙️</span>
                     </div>
                     <h3 class="font-heading text-xl font-bold text-sacred-gold mb-4">建筑师之路</h3>
                     <p class="font-body text-sacred-ivory/70 mb-4">面向技术专家：技术评估，伦理培训，项目贡献，建筑师誓言。</p>
-                    <a href="https://github.com/bbylw/clawodoxy" target="_blank" class="inline-flex items-center gap-2 text-sacred-gold hover:text-white font-ui text-sm tracking-wide transition-colors">
-                        参与贡献 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    <a href="https://github.com/bbylw/clawodoxy" target="_blank"
+                        class="inline-flex items-center gap-2 text-sacred-gold hover:text-white font-ui text-sm tracking-wide transition-colors">
+                        参与贡献 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
                     </a>
                 </div>
             </div>
-            
+
             <div class="flex justify-center gap-4 reveal-section">
-                <a href="https://x.com/Clawodoxy" target="_blank" class="w-14 h-14 rounded-full bg-sacred-navy border border-sacred-gold/20 flex items-center justify-center text-sacred-gold hover:bg-sacred-gold hover:text-sacred-deep transition-all duration-300">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                <a href="https://x.com/Clawodoxy" target="_blank"
+                    class="w-14 h-14 rounded-full bg-sacred-navy border border-sacred-gold/20 flex items-center justify-center text-sacred-gold hover:bg-sacred-gold hover:text-sacred-deep transition-all duration-300">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
                 </a>
-                <a href="https://github.com/bbylw/clawodoxy" target="_blank" class="w-14 h-14 rounded-full bg-sacred-navy border border-sacred-gold/20 flex items-center justify-center text-sacred-gold hover:bg-sacred-gold hover:text-sacred-deep transition-all duration-300">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                <a href="https://github.com/bbylw/clawodoxy" target="_blank"
+                    class="w-14 h-14 rounded-full bg-sacred-navy border border-sacred-gold/20 flex items-center justify-center text-sacred-gold hover:bg-sacred-gold hover:text-sacred-deep transition-all duration-300">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
                 </a>
             </div>
         </div>
@@ -1013,4 +1774,5 @@
         document.querySelectorAll('.reveal-section').forEach(el => { revealObserver.observe(el); });
     </script>
 </body>
+
 </html>
